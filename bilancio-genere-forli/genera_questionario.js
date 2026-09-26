@@ -180,6 +180,34 @@ const sezioni = [
   },
 ];
 
+// ---------- versione breve (argomento "breve") ----------
+const BREVE = process.argv[3] === 'breve';
+const tutte = Object.fromEntries(sezioni.flatMap(s => s.domande).map(d => [d.id, d]));
+let n = 0;
+const da = (id, over = {}) => {
+  const d = { ...tutte[id], ...over };
+  d.src = `${tutte[id].src} · versione completa ${id}`;
+  d.id = String(++n);
+  return d;
+};
+const sezioniBreve = [
+  { titolo: 'Chi sei', domande: [da('A1'), da('A2')] },
+  { titolo: 'Famiglia e cura', domande: [
+    da('B3', { t: 'Se hai figli: dopo la nascita (anche fino a 15 anni dopo), il tuo reddito o la tua carriera ne hanno risentito?', cond: undefined,
+      o: ['Non ho figli', ...tutte.B3.o] }),
+    da('B6', { t: 'Quante ore al giorno dedichi in media alla cura di figli o familiari?', o: ['Nessuna', ...tutte.B6.o] }),
+  ] },
+  { titolo: 'Il tuo lavoro', domande: [da('C1'), da('C2'), da('C4'), da('C5'), da('C7')] },
+  { titolo: 'Equilibrio e pari opportunità', domande: [da('D1'), da('D2')] },
+  { titolo: 'L’Ordine', domande: [da('B9', { max: 2 }), da('E5')] },
+  { titolo: 'Accessibilità', domande: [
+    da('F1'),
+    da('F2', { cond: 'Facoltativa. Rispondendo acconsenti al trattamento anonimo di questo dato sulla salute (art. 9 GDPR).' }),
+  ] },
+  { titolo: 'La tua proposta', domande: [da('G1')] },
+];
+const elenco = BREVE ? sezioniBreve : sezioni;
+
 // ---------- helpers ----------
 const run = (text, opts = {}) => new TextRun({ text, font: FONT, color: INK, size: 24, ...opts });
 const p = (children, opts = {}) => new Paragraph({ children: Array.isArray(children) ? children : [children], spacing: { after: 120, line: 360 }, ...opts });
@@ -211,7 +239,7 @@ function domanda(d) {
 }
 
 const h1 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_1, spacing: { before: 360, after: 160 }, children: [new TextRun({ text: t, font: FONT, bold: true, size: 32, color: ACCENT })] });
-const h2 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_2, pageBreakBefore: true, spacing: { before: 0, after: 160 }, children: [new TextRun({ text: t, font: FONT, bold: true, size: 28, color: ACCENT })] });
+const h2 = (t, salto = !BREVE) => new Paragraph({ heading: HeadingLevel.HEADING_2, pageBreakBefore: salto, spacing: { before: salto ? 0 : 360, after: 160 }, children: [new TextRun({ text: t, font: FONT, bold: true, size: 28, color: ACCENT })] });
 
 // Tabella di raccordo con il questionario nazionale
 function tabellaRaccordo() {
@@ -223,7 +251,7 @@ function tabellaRaccordo() {
     children: [new Paragraph({ children: [run(text, { size: 20, bold: head })] })],
   });
   const rows = [new TableRow({ tableHeader: true, children: [cell('Domanda', W[0], true), cell('Tema', W[1], true), cell('Confronto con', W[2], true)] })];
-  sezioni.flatMap(s => s.domande).forEach(d => {
+  elenco.flatMap(s => s.domande).forEach(d => {
     rows.push(new TableRow({ cantSplit: true, children: [cell(d.id, W[0]), cell(d.t.length > 70 ? d.t.slice(0, 67) + '…' : d.t, W[1]), cell(d.src, W[2])] }));
   });
   return new Table({ width: { size: 9026, type: WidthType.DXA }, columnWidths: W, rows });
@@ -232,12 +260,12 @@ function tabellaRaccordo() {
 // ---------- documento ----------
 const children = [
   new Paragraph({ spacing: { after: 80 }, children: [new TextRun({ text: 'Ordine dei Dottori Commercialisti e degli Esperti Contabili di Forlì', font: FONT, size: 22, color: '4B5563' })] }),
-  new Paragraph({ heading: HeadingLevel.TITLE, spacing: { after: 120 }, children: [new TextRun({ text: 'Questionario per il Bilancio di genere e inclusione', font: FONT, bold: true, size: 40, color: ACCENT })] }),
+  new Paragraph({ heading: HeadingLevel.TITLE, spacing: { after: 120 }, children: [new TextRun({ text: BREVE ? 'Bilancio di genere e inclusione: 5 minuti per il tuo Ordine' : 'Questionario per il Bilancio di genere e inclusione', font: FONT, bold: true, size: 40, color: ACCENT })] }),
   p(run('Bozza per il Comitato Pari Opportunità – da validare prima della diffusione', { size: 22, color: '4B5563' })),
 
   h1('Prima di iniziare'),
   p(run('Cara collega, caro collega,')),
-  p(run('l’Ordine sta preparando il suo Bilancio di genere e inclusione. Ti chiediamo circa 12 minuti.')),
+  p(run(BREVE ? `l’Ordine sta preparando il suo Bilancio di genere e inclusione. Sono ${n} domande, circa 5 minuti.` : 'l’Ordine sta preparando il suo Bilancio di genere e inclusione. Ti chiediamo circa 12 minuti.')),
   bullet('Il questionario è anonimo: non chiediamo nome, email o codice fiscale.'),
   bullet('Ogni domanda è facoltativa. Puoi sempre saltarla.'),
   bullet('Molte domande sono uguali a quelle del questionario nazionale CNPO 2025. Così possiamo confrontare il nostro territorio con l’Italia.'),
@@ -246,7 +274,7 @@ const children = [
   p([run('Legenda: ', { bold: true }), run('○ una sola risposta   ☐ più risposte possibili')]),
 ];
 
-sezioni.forEach((s, i) => {
+elenco.forEach((s, i) => {
   children.push(h2(s.titolo));
   if (s.intro) children.push(p(run(s.intro, { color: '374151' })));
   s.domande.forEach(d => children.push(...domanda(d)));
@@ -256,11 +284,11 @@ children.push(h2('Grazie!'));
 children.push(p(run('Grazie per il tuo tempo. I risultati saranno presentati nel Bilancio di genere e inclusione dell’Ordine, anche in versione breve e facile da leggere.')));
 
 // ---------- note per il CPO ----------
-children.push(h2('Note per il Comitato Pari Opportunità (da non pubblicare)'));
+children.push(h2('Note per il Comitato Pari Opportunità (da non pubblicare)', true));
 children.push(h1('Privacy'));
 [
   'Informativa ex art. 13 GDPR in apertura: titolare (Ordine), finalità (Bilancio di genere), base giuridica, conservazione, diritti.',
-  'Sezione F: dati relativi alla salute (art. 9 GDPR). Serve consenso esplicito (domanda F0) e la sezione deve restare facoltativa.',
+  BREVE ? 'Domanda 15 (DSA): dato relativo alla salute (art. 9 GDPR). Deve restare facoltativa, con la frase di consenso esplicito ben visibile.' : 'Sezione F: dati relativi alla salute (art. 9 GDPR). Serve consenso esplicito (domanda F0) e la sezione deve restare facoltativa.',
   'Nella piattaforma: disattivare raccolta email, login e indirizzi IP. Preferire server nell’Unione europea.',
   'Nelle tabelle pubblicate: oscurare le celle con meno di 5 risposte. Non incrociare più di due variabili del profilo (es. genere × età, non genere × età × zona).',
   'Sentire il DPO dell’Ordine prima della diffusione.',
@@ -276,6 +304,7 @@ children.push(h1('Accessibilità del questionario'));
 
 children.push(h1('Diffusione e analisi'));
 [
+  ...(BREVE ? ['Versione breve: tutte le domande sono prese dalla versione completa. Le 11 riprese dal questionario nazionale mantengono le stesse classi, così il confronto con l’Italia resta possibile.'] : []),
   'Periodo suggerito: 4-6 settimane, con due promemoria.',
   'Obiettivo: almeno il 20% degli iscritti. Il campione nazionale CNPO in Emilia-Romagna è stato molto piccolo (0,8% degli uomini, 2,8% delle donne).',
   'Tenere traccia della quota di donne e uomini tra chi risponde. Se è molto diversa da quella dell’Albo, pesare i risultati per genere ed età.',
@@ -300,5 +329,5 @@ const doc = new Document({
 
 Packer.toBuffer(doc).then(b => {
   fs.writeFileSync(process.argv[2], b);
-  console.log('scritto', process.argv[2], sezioni.flatMap(s => s.domande).length, 'domande');
+  console.log('scritto', process.argv[2], elenco.flatMap(s => s.domande).length, 'domande');
 });
