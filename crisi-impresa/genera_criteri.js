@@ -154,6 +154,7 @@ C.push(h1('4. Concordato minore (artt. 74-83)'));
 C.push(h2('Accesso e apertura (art. 78)'));
 list([
   'Legittimati: debitore non consumatore e non assoggettabile a liquidazione giudiziale, cioè impresa minore, professionista anche forfettario, agricoltore, garante o socio di società.',
+  'Continuità (art. 74 c.1): il professionista anche forfettario e l’impresa minore possono continuare l’attività; la finanza esterna non è obbligatoria ma rafforza la proposta. Le rate di un leasing rinegoziato del bene strumentale possono entrare tra le spese incomprimibili per proseguire l’attività (Genova 2026). Una continuità senza cambiamenti nell’attività non basta a escludere il concordato, anche se l’Erario obietta che il debitore tornerà a non pagare le imposte (Genova 2024).',
   'Concordato liquidatorio senza continuità (art. 74 c.2): serve finanza esterna senza diritto di restituzione. Deve aumentare l’attivo “in misura apprezzabile” rispetto a quello della liquidazione, compresi 3 anni di quote di reddito ed eredità acquisibili (Verona 2026: 37.348 € contro 28.412 €).',
   'Finanza esterna: servono la dichiarazione di impegno dei terzi, la prova della loro capacità attestata dal Gestore e preferibilmente la rinuncia a surroga e regresso. Verona l’ha fatta depositare prima, con assegni circolari affidati al Gestore.',
   'Documenti (art. 75 c.1): dichiarazioni fiscali, IVA e IRAP degli ultimi 3 anni, scritture contabili, atti straordinari degli ultimi 5 anni, entrate e spese della famiglia.',
@@ -173,7 +174,7 @@ list([
 ]);
 C.push(h2('Omologa (art. 80)'));
 list([
-  'Cram-down fiscale (art. 80 c.3): se il voto del Fisco è determinante e la proposta per il Fisco è più conveniente della liquidazione, il giudice omologa lo stesso. Genova (2025) segue la lettera dell’art. 80 e non la “sterilizzazione” dell’art. 88 c.4 del concordato preventivo. La convenienza si è vista anche di misura: 21.879 € contro 20.661 €.',
+  'Cram-down fiscale (art. 80 c.3): se il voto del Fisco è determinante e la proposta per il Fisco è più conveniente della liquidazione, il giudice omologa lo stesso. A Genova gli orientamenti sono diversi. Nel 2024 un giudice ha “sterilizzato” il voto del Fisco e ricalcolato le classi senza di esso. Nel 2025 un altro giudice ha escluso la sterilizzazione dell’art. 88 c.4 e ha applicato la lettera dell’art. 80, omologando anche con una convenienza di misura (21.879 € contro 20.661 €).',
   'Convenienza: il giudice ricalcola i conteggi. Per le quote societarie usa il pro quota di patrimonio netto più l’utile; per il reddito usa la quota pignorata per 36 mesi.',
   'Vendita di immobili: il giudice può imporre una gara sulla proposta d’acquisto, con almeno 30 giorni di pubblicità. La cessione diretta è possibile solo con attestazione di congruità del prezzo (art. 81 c.1).',
   'Cessione del quinto: il giudice può scioglierla (art. 97 richiamato) se serve al piano, notificando il cessionario (Verona).',
@@ -193,6 +194,7 @@ list([
   'Beni: nessuno è escluso, nemmeno l’auto, di cui al massimo si autorizza l’uso fino alla vendita. La vendita si evita solo versando dall’esterno il controvalore (Forlì). In un concordato minore familiare a Genova l’auto strumentale di modico valore è rimasta fuori dall’attivo.',
   'Creditore fondiario: può iniziare o proseguire l’esecuzione individuale (Cass. 22914/2024, Savona).',
   'Liquidatore: di regola è il Gestore stesso (art. 270 c.2 lett. b). Savona lo autorizza ad accedere alle banche dati (artt. 155-quater e seguenti disp. att. c.p.c.).',
+  'Sostituzione del liquidatore (Forlì 2026): revoca d’urgenza se il liquidatore perde i requisiti, ad esempio per sospensione disciplinare dall’albo divenuta efficace. Il nuovo liquidatore verifica lo stato della procedura, si fa consegnare tutta la documentazione dal precedente, ne valuta la regolarità e riferisce al giudice. Nelle sentenze di apertura Forlì avverte che il mancato deposito delle relazioni semestrali è causa di revoca e incide sul compenso.',
 ]);
 C.push(h2('Limite di reddito escluso (art. 268 c.4 lett. b)'));
 C.push(table(['Caso', 'Reddito e spese', 'Quota alla procedura'], [
