@@ -1,0 +1,253 @@
+{
+ "_nota": "Dati del Bilancio di genere 2025. I campi null sono in attesa: quando arrivano, inserirli qui e rigenerare con: node genera_bilancio.js",
+ "iscritti": {
+  "serie_totali": {
+   "2020": [
+    634,
+    16
+   ],
+   "2021": [
+    637,
+    14
+   ],
+   "2022": [
+    639,
+    11
+   ],
+   "2023": [
+    641,
+    13
+   ],
+   "2024": [
+    634,
+    13
+   ],
+   "2025": [
+    628,
+    11
+   ]
+  },
+  "per_genere": {
+   "2023": [
+    301,
+    353
+   ],
+   "2024": [
+    299,
+    348
+   ],
+   "2025": [
+    292,
+    347
+   ]
+  },
+  "per_genere_2021_2022": null,
+  "sezioni_2025": {
+   "Albo sez. A": [
+    283,
+    342
+   ],
+   "Albo sez. B": [
+    1,
+    2
+   ],
+   "Elenco speciale": [
+    8,
+    3
+   ]
+  },
+  "sezioni_2024": {
+   "Albo sez. A": [
+    287,
+    343
+   ],
+   "Albo sez. B": [
+    1,
+    2
+   ],
+   "Elenco speciale": [
+    11,
+    3
+   ]
+  },
+  "classi_eta_2025": {
+   "Fino a 35": [
+    28,
+    25
+   ],
+   "36-45": [
+    60,
+    38
+   ],
+   "46-55": [
+    99,
+    92
+   ],
+   "56-65": [
+    81,
+    127
+   ],
+   "Oltre 65": [
+    24,
+    65
+   ]
+  },
+  "generazioni_2025": {
+   "Generazione silenziosa (1928-1945)": [
+    2,
+    7
+   ],
+   "Baby boomers (1946-1964)": [
+    57,
+    121
+   ],
+   "Generazione X (1965-1980)": [
+    148,
+    160
+   ],
+   "Millennials (1981-2000)": [
+    85,
+    59
+   ]
+  },
+  "eta_media": {
+   "2024": [
+    50.3,
+    55.5
+   ],
+   "2025": [
+    51.0,
+    55.7
+   ]
+  }
+ },
+ "praticanti": {
+  "2020": 23,
+  "2021": 19,
+  "2022": 28,
+  "2023": 28,
+  "2024": [
+   15,
+   10
+  ],
+  "2025": [
+   20,
+   13
+  ]
+ },
+ "flussi_stima_2025": {
+  "uscite": [
+   9,
+   8
+  ],
+  "ingressi": [
+   2,
+   7
+  ]
+ },
+ "flussi_ufficiali": null,
+ "consiglio": {
+  "2022-2025": [
+   4,
+   7
+  ],
+  "2026-2030": null,
+  "cariche_2026_2030": null
+ },
+ "organi": null,
+ "cpo": {
+  "nomina": "23 febbraio 2026",
+  "componenti": [
+   5,
+   2
+  ],
+  "nomi": null,
+  "budget": null,
+  "personale": null
+ },
+ "cassa_cnpadc": {
+  "iscritti_attivi": {
+   "Forlì": [
+    486,
+    45.3
+   ],
+   "Emilia-Romagna": [
+    6098,
+    40.8
+   ],
+   "Italia": [
+    73959,
+    33.4
+   ]
+  },
+  "reddito_medio": {
+   "Forlì": [
+    59218,
+    129687
+   ],
+   "Emilia-Romagna": [
+    69199,
+    133509
+   ],
+   "Italia": [
+    61184,
+    115046
+   ]
+  },
+  "divario_reddito": {
+   "Forlì": [
+    49.2,
+    54.3
+   ],
+   "Emilia-Romagna": [
+    47.8,
+    48.2
+   ],
+   "Italia": [
+    46.2,
+    46.8
+   ]
+  },
+  "divario_volume_affari": {
+   "Forlì": 57.0,
+   "Emilia-Romagna": 52.2,
+   "Italia": 50.9
+  },
+  "rapporto_eta": {
+   "Fino a 30": [
+    133,
+    93,
+    90
+   ],
+   "31-40": [
+    73,
+    66,
+    69
+   ],
+   "41-50": [
+    63,
+    55,
+    57
+   ],
+   "51-65": [
+    46,
+    52,
+    52
+   ],
+   "Oltre 65": [
+    49,
+    61,
+    87
+   ]
+  }
+ },
+ "cassa_cnpr": null,
+ "formazione_eventi": null,
+ "esoneri": null,
+ "tribunale": null,
+ "occ": null,
+ "cciaa": null,
+ "spese": null,
+ "questionario": null,
+ "attivita_2025": null
+}
