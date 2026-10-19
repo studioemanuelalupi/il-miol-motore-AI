@@ -28,6 +28,14 @@
    ]
   },
   "per_genere": {
+   "2021": [
+    292,
+    359
+   ],
+   "2022": [
+    296,
+    354
+   ],
    "2023": [
     301,
     353
@@ -41,7 +49,7 @@
     347
    ]
   },
-  "per_genere_2021_2022": null,
+  "per_genere_2021_2022": true,
   "sezioni_2025": {
    "Albo sez. A": [
     283,
@@ -123,9 +131,18 @@
  },
  "praticanti": {
   "2020": 23,
-  "2021": 19,
-  "2022": 28,
-  "2023": 28,
+  "2021": [
+   13,
+   6
+  ],
+  "2022": [
+   15,
+   13
+  ],
+  "2023": [
+   14,
+   15
+  ],
   "2024": [
    15,
    10
@@ -145,23 +162,134 @@
    7
   ]
  },
- "flussi_ufficiali": null,
+ "flussi_ufficiali": [
+  [
+   "2021",
+   "6 / 7",
+   "6 / 6",
+   "su richiesta 11, trasferimento 1"
+  ],
+  [
+   "2022",
+   "6 / 2",
+   "2 / 7",
+   "su richiesta 7, decesso 1, trasferimento 1"
+  ],
+  [
+   "2023",
+   "9 / 5",
+   "4 / 6",
+   "decesso 1, trasferimento 1, non indicato 8"
+  ],
+  [
+   "2024",
+   "6 / 1",
+   "8 / 6",
+   "su richiesta 12, decesso 1, trasferimento 1"
+  ],
+  [
+   "2025",
+   "2 / 8",
+   "9 / 9",
+   "su richiesta 12, decesso 3, trasferimento 3"
+  ],
+  [
+   "Totale",
+   "29 / 23",
+   "29 / 34",
+   ""
+  ]
+ ],
  "consiglio": {
   "2022-2025": [
    4,
    7
   ],
-  "2026-2030": null,
-  "cariche_2026_2030": null
+  "2026-2030": [
+   5,
+   6
+  ],
+  "cariche_2022": "Presidente uomo, Vicepresidente uomo, Segretaria donna, Tesoriera donna",
+  "cariche_2026_2030": "Presidente donna, Vicepresidente uomo, Segretaria donna, Tesoriera donna"
  },
- "organi": null,
+ "organi": [
+  [
+   "Consiglio di disciplina 2022-2026 (Presidente donna)",
+   5,
+   6
+  ],
+  [
+   "Consiglio di disciplina 2026-2030 (Presidente e Segretaria donne)",
+   6,
+   5
+  ],
+  [
+   "Collegio dei revisori 2022-2026 (Presidente donna)",
+   3,
+   0
+  ],
+  [
+   "Collegio dei revisori 2026-2030 (Presidente donna)",
+   2,
+   1
+  ],
+  [
+   "Commissioni 2022-2026: 3 commissioni, componenti",
+   12,
+   15
+  ],
+  [
+   "Commissioni 2026-2030: 4 commissioni, componenti",
+   19,
+   21
+  ],
+  [
+   "Presidenze delle commissioni 2022-2026",
+   2,
+   1
+  ],
+  [
+   "Presidenze delle commissioni 2026-2030",
+   1,
+   3
+  ]
+ ],
  "cpo": {
   "nomina": "23 febbraio 2026",
   "componenti": [
-   5,
-   2
+   6,
+   1
   ],
-  "nomi": null,
+  "nomi": [
+   [
+    "Emanuela Lupi",
+    "Presidente"
+   ],
+   [
+    "Monica Orecchioni",
+    "Vicepresidente"
+   ],
+   [
+    "Debora Bonavita",
+    "Segretaria"
+   ],
+   [
+    "Roberta Fabbri",
+    "Componente"
+   ],
+   [
+    "Lucia Camporesi",
+    "Componente"
+   ],
+   [
+    "Francesco Samorì",
+    "Componente"
+   ],
+   [
+    "Gianluca Zavagli",
+    "Componente"
+   ]
+  ],
   "budget": null,
   "personale": null
  },
@@ -242,7 +370,16 @@
   }
  },
  "cassa_cnpr": null,
- "formazione_eventi": null,
+ "formazione_eventi": [
+  [
+   "2025",
+   51,
+   74,
+   193,
+   "27,7%",
+   "12 (di cui 3 con almeno 3 relatori)"
+  ]
+ ],
  "esoneri": [
   [
    "Maternità",
@@ -267,10 +404,36 @@
  "questionario": null,
  "attivita_2025": null,
  "spese_note": "Fondazione: nel 2025 l’unica spesa per attività socio-culturali o sportive è l’iscrizione degli iscritti alla manifestazione “Diabetes” (importo da scheda contabile, da inserire). Non ci sono stati altri eventi culturali o sportivi.",
- "ricevuti": {
-  "flussi": "12/10",
-  "serie": "12/10",
-  "organi": "12/10",
-  "eventi": "12/10"
- }
+ "ricevuti": {},
+ "flussi_u50": {
+  "2021": [
+   0,
+   0
+  ],
+  "2022": [
+   1,
+   0
+  ],
+  "2023": [
+   1,
+   2
+  ],
+  "2024": [
+   2,
+   0
+  ],
+  "2025": [
+   4,
+   1
+  ],
+  "totale": [
+   8,
+   3
+  ]
+ },
+ "eventi_kpi": {
+  "pct_relatrici": "27,7%",
+  "solo_uomini": "12 su 51"
+ },
+ "occ_nota": "Il 19/10 è arrivato il modulo predisposto per l’OCC Romagna, ancora vuoto: i dati non sono stati compilati."
 }

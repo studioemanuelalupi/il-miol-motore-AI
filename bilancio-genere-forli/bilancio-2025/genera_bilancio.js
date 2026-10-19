@@ -51,15 +51,16 @@ C.push(h2('Come leggere questo documento'));
 C.push(p('Abbiamo scritto il bilancio per essere letto da tutte e tutti, anche da chi ha un disturbo specifico dell’apprendimento (DSA): carattere senza grazie, frasi brevi, sfondo crema, ogni grafico accompagnato dalla tabella con i numeri. Usiamo il femminile e il maschile; quando per brevità c’è solo il maschile, si intende riferito a tutte le persone.'));
 C.push(p('Il documento è pubblicato solo in formato digitale sul sito dell’Ordine, leggibile anche con la sintesi vocale.'));
 
-C.push(h2('Il 2025 in cinque numeri'));
+C.push(h2('Il 2025 in sei numeri'));
 C.push(table(['', ''], [
   [run(pct(f25, tot25), { bold: true, size: 24 }), `le donne tra gli iscritti (${f25} su ${tot25}). In Italia sono il 33,9%.`],
   [run('61%', { bold: true, size: 24 }), 'le donne tra gli iscritti di 36-45 anni. Sotto i 56 anni le donne sono la maggioranza.'],
   [run('61%', { bold: true, size: 24 }), `le donne tra i praticanti (${D.praticanti['2025'][0]} su ${D.praticanti['2025'][0] + D.praticanti['2025'][1]}).`],
   [run('54,3%', { bold: true, size: 24 }), 'il divario di reddito tra professioniste e professionisti iscritti alla Cassa: più alto della media regionale (48,2%) e nazionale (46,8%).'],
-  [run('4 su 11', { bold: true, size: 24 }), 'le donne nel Consiglio 2022-2025. Il Consiglio 2026-2030 è presieduto da una donna.'],
+  [run('3 su 4', { bold: true, size: 24 }), 'le cariche del Consiglio 2026-2030 affidate a donne: Presidente, Segretaria, Tesoriera. Nel Consiglio le donne sono 5 su 11.'],
+  [run('27,7%', { bold: true, size: 24 }), 'le relatrici negli eventi formativi del 2025: poco più di una su quattro.'],
 ], [2000, 7026]));
-C.push(p(run('Nota: il primo, il terzo e il quinto numero si riferiscono al 31/12/2025; il divario di reddito ai redditi 2024 comunicati alla Cassa nel 2025.', { size: 18, color: GREY })));
+C.push(p(run('Nota: iscritti e praticanti al 31/12/2025; divario di reddito sui redditi 2024 comunicati alla Cassa nel 2025; Consiglio in carica dal 23/2/2026.', { size: 18, color: GREY })));
 
 C.push(new Paragraph({ pageBreakBefore: true, children: [new TextRun({ text: 'Sommario', font: FONT, bold: true, size: 28, color: ACCENT })] }));
 C.push(new TableOfContents('Sommario', { hyperlink: true, headingStyleRange: '1-2' }));
@@ -131,10 +132,11 @@ fonte('Albo dell’Ordine, elaborazione CPO. Nella sezione B e nell’Elenco spe
 C.push(h2('Serie storica'));
 const st = I.serie_totali;
 C.push(table(['Anno', 'Albo', 'Elenco speciale', 'Totale', 'Donne', '% donne'], [
-  ...['2020', '2021', '2022'].map(y => [y, st[y][0], st[y][1], st[y][0] + st[y][1], I.per_genere_2021_2022 && I.per_genere_2021_2022[y] ? I.per_genere_2021_2022[y] : (y === '2020' ? '—' : daFare('dato 2')), '…']),
-  ...['2023', '2024', '2025'].map(y => { const g = I.per_genere[y]; const t = g[0] + g[1]; return [y, st[y][0], st[y][1], t, g[0], pct(g[0], t)]; }),
+  ['2020', st['2020'][0], st['2020'][1], st['2020'][0] + st['2020'][1], '—', '—'],
+  ...['2021', '2022', '2023', '2024', '2025'].map(y => { const g = I.per_genere[y]; const t = g[0] + g[1]; return [y, st[y][0], st[y][1], t, g[0], pct(g[0], t)]; }),
 ], [1200, 1300, 1700, 1300, 1700, 1826]));
-fonte('bilanci di genere 2023 e 2024 dell’Ordine; Albo 2024-2025. Le Linee guida chiedono almeno 5 anni per genere: mancano 2021 e 2022 (richiesti alla Segreteria).');
+fonte('bilanci di genere 2023 e 2024 dell’Ordine (2020); Albo dell’Ordine 2021-2025. Per il 2020 non è disponibile il dato per genere.');
+C.push(p('In cinque anni la quota di donne è passata dal 44,9% al 45,7%, con un massimo del 46,2% nel 2024. Gli iscritti sono rimasti stabili intorno ai 650: le donne sono la stessa cifra di cinque anni fa (292), gli uomini sono 12 in meno.'));
 
 C.push(h2('Età'));
 C.push(img('eta_genere.png'));
@@ -148,31 +150,39 @@ fonte('Albo dell’Ordine al 31/12/2025, generazioni come nei bilanci precedenti
 C.push(h2('Praticanti'));
 const pr = D.praticanti;
 C.push(table(['Anno', 'Totale', 'Donne', 'Uomini', '% donne'], [
-  ...['2020', '2021', '2022', '2023'].map(y => [y, pr[y], daFare('dato 2'), '…', '…']),
-  ...['2024', '2025'].map(y => [y, pr[y][0] + pr[y][1], pr[y][0], pr[y][1], pct(pr[y][0], pr[y][0] + pr[y][1])]),
+  ['2020', pr['2020'], '—', '—', '—'],
+  ...['2021', '2022', '2023', '2024', '2025'].map(y => [y, pr[y][0] + pr[y][1], pr[y][0], pr[y][1], pct(pr[y][0], pr[y][0] + pr[y][1])]),
 ], [1500, 1500, 2000, 2000, 2026]));
 fonte('Registro del tirocinio.');
-C.push(p('Sei praticanti su dieci sono donne. È la base della professione di domani: il punto è che restino e crescano.'));
+C.push(p('Negli ultimi due anni sei praticanti su dieci sono donne; nel 2023 erano meno della metà. È la base della professione di domani: il punto è che restino e crescano.'));
+fonte('Registro del tirocinio. Per il 2023 il bilancio 2024 riportava 28 praticanti, l’estrazione ne conta 29.');
 
 C.push(h2('Chi entra e chi esce'));
 const fs_ = D.flussi_stima_2025;
-if (D.flussi_ufficiali) C.push(table(['Anno', 'Iscrizioni D / U', 'Cancellazioni D / U', 'Motivi'], D.flussi_ufficiali, [1500, 2500, 2500, 2526]));
+if (D.flussi_ufficiali) {
+  C.push(table(['Anno', 'Iscrizioni donne / uomini', 'Cancellazioni donne / uomini', 'Motivi delle cancellazioni'], D.flussi_ufficiali, [1300, 2200, 2400, 3126]));
+  fonte('Segreteria dell’Ordine. Iscrizioni all’Albo e all’Elenco speciale; il motivo della cancellazione manca per 8 casi del 2023.');
+  const u = D.flussi_u50.totale;
+  C.push(p(`In cinque anni sono entrate 29 donne e 23 uomini, ma sono uscite 29 donne e 34 uomini. Il 2025 è un’eccezione: entrano 2 donne e 8 uomini, mentre escono 9 donne e 9 uomini. Chi lascia la professione presto è soprattutto donna: tra le cancellazioni sotto i 50 anni le donne sono ${u[0]} e gli uomini ${u[1]}, e solo nel 2025 le donne sono 4. Quasi tutte si cancellano su richiesta.`));
+}
 else {
   C.push(table(['2024 → 2025', 'Donne', 'Uomini'], [['Nuovi ingressi nell’Albo', fs_.ingressi[0], fs_.ingressi[1]], ['Uscite dall’Albo', fs_.uscite[0], fs_.uscite[1]]], [4000, 2500, 2526]));
   C.push(p([run('Stima del CPO dal confronto degli elenchi anonimi 2024 e 2025. '), daFare('dato 1: iscrizioni e cancellazioni 2021-2025 per genere, età e motivo')]));
 }
-C.push(p('Due segnali da approfondire. Le praticanti sono il 60%, ma tra i nuovi iscritti del 2025 le donne sono solo 2 su 9. Tra chi è uscito, 4 donne hanno meno di 50 anni, mentre gli uomini usciti sono quasi tutti oltre i 57 anni. Anche a livello nazionale le donne sono passate dal 39% al 46% delle cancellazioni dalla Cassa tra il 2018 e il 2023.'));
+C.push(p('Anche a livello nazionale le donne sono passate dal 39% al 46% delle cancellazioni dalla Cassa tra il 2018 e il 2023. Il questionario chiederà a chi pensa di lasciare quali sono i motivi.'));
 
 // ---------------- 6 governance
 C.push(h1('6. Chi decide: Consiglio e organi'));
 C.push(table(['Organo', 'Donne', 'Uomini', '% donne'], [
-  ['Consiglio 2022-2025', 4, 7, pct(4, 11)],
+  ['Consiglio 2022-2026', 4, 7, pct(4, 11)],
   D.consiglio['2026-2030'] ? ['Consiglio 2026-2030', ...D.consiglio['2026-2030'], pct(D.consiglio['2026-2030'][0], D.consiglio['2026-2030'][0] + D.consiglio['2026-2030'][1])] : ['Consiglio 2026-2030', daFare('dato 3'), '…', '…'],
   ['CPO 2026-2030', D.cpo.componenti[0], D.cpo.componenti[1], pct(D.cpo.componenti[0], 7)],
-  ...(D.organi || [['Consiglio di disciplina, revisori, commissioni', daFare('dato 3'), '…', '…']]),
+  ...(D.organi ? D.organi.map(o => [o[0], o[1], o[2], pct(o[1], o[1] + o[2])]) : [['Consiglio di disciplina, revisori, commissioni', daFare('dato 3'), '…', '…']]),
 ], [3800, 1600, 1600, 2026]));
-C.push(p('Nel Consiglio 2022-2025 le donne erano il 36%, dieci punti sotto la loro presenza tra gli iscritti (46%). Il Consiglio 2026-2030 è presieduto da una donna, la dott.ssa Sara Pennacchi: a livello nazionale le Presidenti di Ordine sono passate da 19 a 30 su 132.'));
-C.push(p(['Cariche (Presidente, Vicepresidente, Segretario, Tesoriere) per genere: ', D.consiglio.cariche_2026_2030 || daFare('dato 3')]));
+fonte('Segreteria dell’Ordine. Il Consiglio 2022-2026 è stato in carica dal 25/2/2022, il Consiglio 2026-2030 dal 23/2/2026.');
+C.push(p('Nel Consiglio 2022-2026 le donne erano il 36%, dieci punti sotto la loro presenza tra gli iscritti. Nel Consiglio 2026-2030 sono il 45%, in linea con l’Albo, e tre cariche su quattro sono di donne: la Presidente, dott.ssa Sara Pennacchi, la Segretaria e la Tesoriera. A livello nazionale le Presidenti di Ordine sono passate da 19 a 30 su 132.'));
+C.push(p(`Cariche 2022-2026: ${D.consiglio.cariche_2022}. Cariche 2026-2030: ${D.consiglio.cariche_2026_2030}.`));
+C.push(p('Negli organi di controllo e di disciplina le donne sono la maggioranza o quasi, e presiedono sia il Consiglio di disciplina sia il Collegio dei revisori. Nelle commissioni invece il quadro è diverso: le componenti sono quasi la metà, ma nel 2026-2030 tre presidenze su quattro sono andate a uomini.'));
 
 // ---------------- 7 redditi
 C.push(h1('7. Quanto guadagniamo: il divario di reddito'));
@@ -203,6 +213,7 @@ C.push(h1('8. Formazione e conciliazione'));
 C.push(h2('Relatrici e relatori'));
 C.push(D.formazione_eventi ? table(['', 'Eventi', 'Relatrici', 'Relatori', '% relatrici', 'Panel di soli uomini'], D.formazione_eventi, [1800, 1300, 1400, 1400, 1500, 1626])
   : attesa(['Anno', 'Eventi', 'Relatrici', 'Relatori', '% relatrici', 'Panel di soli uomini'], 'dato 4, eventi 2025', [1800, 1300, 1400, 1400, 1500, 1626]));
+if (D.formazione_eventi) { fonte('Segreteria dell’Ordine: 51 eventi del 2025 (convegni, webinar, seminari, corsi). Un evento in aula e in webinar conta due volte.'); C.push(p('Su 267 interventi di relatori, 74 sono di donne: poco più di uno su quattro, contro il 46% di donne tra gli iscritti. In 12 eventi su 51 hanno parlato solo uomini, mai il contrario.')); }
 C.push(h2('Esoneri dalla formazione per maternità, paternità e cura'));
 C.push(D.esoneri ? table(['Motivo', 'Donne', 'Uomini'], D.esoneri, [4000, 2500, 2526]) : attesa(['Motivo', 'Donne', 'Uomini'], 'dato 5', [4000, 2500, 2526]));
 C.push(p('Questi dati dicono quanto il lavoro di cura pesa ancora sulle donne della professione. Il confronto con le indennità di maternità e paternità della Cassa completerà il quadro nel bilancio 2026.'));
@@ -213,6 +224,7 @@ C.push(p('Le Linee guida suggeriscono di guardare oltre l’Albo: chi riceve gli
 C.push(h2('Tribunale di Forlì'));
 C.push(D.tribunale ? table(['Tipo di incarico', 'Donne', 'Uomini', '% donne'], D.tribunale, [3800, 1600, 1600, 2026]) : attesa(['Tipo di incarico 2021-2025', 'Donne', 'Uomini', '% donne'], 'dato 9: curatele, liquidazioni, CTU, custodie, delegati alle vendite', [3800, 1600, 1600, 2026]));
 C.push(h2('OCC Romagna'));
+if (D.occ_nota && !D.occ) C.push(p(D.occ_nota));
 C.push(D.occ ? table(['', 'Donne', 'Uomini', '% donne'], D.occ, [3800, 1600, 1600, 2026]) : attesa(['Gestori iscritti a Forlì e incarichi 2021-2025', 'Donne', 'Uomini', '% donne'], 'dato 10', [3800, 1600, 1600, 2026]));
 C.push(h2('Collegi sindacali e revisione nelle imprese'));
 C.push(D.cciaa ? table(['Carica al 31/12/2025', 'Donne', 'Uomini', '% donne'], D.cciaa, [3800, 1600, 1600, 2026]) : attesa(['Carica al 31/12/2025', 'Donne', 'Uomini', '% donne'], 'dato 11, Camera di Commercio della Romagna', [3800, 1600, 1600, 2026]));
@@ -237,8 +249,9 @@ C.push(h1('12. Obiettivi per il 2027'));
 C.push(p('Nessuno dei bilanci che abbiamo esaminato fissa obiettivi numerici da verificare l’anno dopo. Noi proviamo: ogni obiettivo ha un indicatore, il valore di partenza e un semaforo che nel bilancio 2026 dirà se l’abbiamo raggiunto. Gli obiettivi sono una proposta del CPO da condividere con il Consiglio.'));
 C.push(table(['Obiettivo', 'Indicatore', 'Partenza 2025', 'Traguardo 2027'], [
   ['Bilancio completo', 'Contenuti minimi delle Linee guida coperti', 'circa 50% nel 2024', '100%'],
-  ['Più relatrici', '% relatrici negli eventi dell’Ordine', daFare('dato 4'), 'almeno 40%'],
-  ['Nessun panel di soli uomini', 'Eventi con soli relatori uomini', daFare('dato 4'), '0'],
+  ['Più relatrici', '% relatrici negli eventi dell’Ordine', D.eventi_kpi.pct_relatrici, 'almeno 40%'],
+  ['Nessun panel di soli uomini', 'Eventi con soli relatori uomini', D.eventi_kpi.solo_uomini, '0 tra gli eventi con 3 o più relatori'],
+  ['Presidenze delle commissioni', 'Commissioni presiedute da donne', '1 su 4', 'almeno 2 su 4 al prossimo rinnovo'],
   ['Il CPO ha risorse', 'Budget assegnato', 'nessuno', daFare('importo da concordare')],
   ['Ascoltare gli iscritti', 'Risposte al questionario', daFare('dato del questionario'), 'almeno 25% degli iscritti'],
   ['Divario di reddito', 'Divario Forlì rispetto alla media regionale', '+6,1 punti', 'sotto la media regionale entro il 2028'],
