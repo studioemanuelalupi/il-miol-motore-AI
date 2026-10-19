@@ -243,11 +243,34 @@
  },
  "cassa_cnpr": null,
  "formazione_eventi": null,
- "esoneri": null,
+ "esoneri": [
+  [
+   "Maternità",
+   1,
+   0
+  ],
+  [
+   "Paternità",
+   0,
+   1
+  ],
+  [
+   "Cura di familiari",
+   0,
+   0
+  ]
+ ],
  "tribunale": null,
  "occ": null,
  "cciaa": null,
  "spese": null,
  "questionario": null,
- "attivita_2025": null
+ "attivita_2025": null,
+ "spese_note": "Fondazione: nel 2025 l’unica spesa per attività socio-culturali o sportive è l’iscrizione degli iscritti alla manifestazione “Diabetes” (importo da scheda contabile, da inserire). Non ci sono stati altri eventi culturali o sportivi.",
+ "ricevuti": {
+  "flussi": "12/10",
+  "serie": "12/10",
+  "organi": "12/10",
+  "eventi": "12/10"
+ }
 }

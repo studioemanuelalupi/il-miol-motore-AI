@@ -45,7 +45,7 @@ C.push(p(run('Ordine dei Dottori Commercialisti e degli Esperti Contabili di For
 C.push(new Paragraph({ heading: HeadingLevel.TITLE, spacing: { before: 1800, after: 200 }, children: [new TextRun({ text: 'Bilancio di genere 2025', font: FONT, bold: true, size: 56, color: ACCENT })] }));
 C.push(p(run('A cura del Comitato Pari Opportunità', { size: 26 })));
 C.push(p(run('Assemblea degli iscritti – Cesena, 26 novembre 2026', { size: 22, color: GREY })));
-C.push(p([run('BOZZA DI LAVORO del 6 ottobre 2026. ', { bold: true }), run('Le parti evidenziate in giallo aspettano i dati richiesti al Consiglio il 2/10/2026 (scadenza 31 ottobre) o il questionario agli iscritti.')], { spacing: { before: 1200, after: 140, line: 360 } }));
+C.push(p([run('BOZZA DI LAVORO del 6 ottobre 2026. ', { bold: true }), run('Le parti evidenziate in giallo aspettano i dati richiesti all’Ordine il 28/9/2026 (scadenza 31 ottobre) o il questionario agli iscritti.')], { spacing: { before: 1200, after: 140, line: 360 } }));
 
 C.push(h2('Come leggere questo documento'));
 C.push(p('Abbiamo scritto il bilancio per essere letto da tutte e tutti, anche da chi ha un disturbo specifico dell’apprendimento (DSA): carattere senza grazie, frasi brevi, sfondo crema, ogni grafico accompagnato dalla tabella con i numeri. Usiamo il femminile e il maschile; quando per brevità c’è solo il maschile, si intende riferito a tutte le persone.'));
@@ -75,7 +75,7 @@ C.push(table(['Dato', 'Fonte', 'Data di riferimento'], [
   ['Serie storica 2020-2023', 'Bilanci di genere 2023 e 2024 dell’Ordine', '31/12 di ogni anno'],
   ['Redditi e volume d’affari', 'Cassa Dottori Commercialisti (CNPADC)', 'Redditi 2023 e 2024'],
   ['Confronto nazionale', 'Questionario CNPO 2025 e bilancio di genere del CNDCEC', '31/12/2024'],
-  [daFare('Cassa Ragionieri, Tribunale, OCC, Camera di Commercio, spese'), 'Richieste del 2/10/2026', '…'],
+  [daFare('Cassa Ragionieri, Tribunale, OCC, Camera di Commercio, spese'), 'Richieste di settembre-ottobre 2026', '…'],
 ], [3000, 4026, 2000]));
 C.push(h2('Regole di calcolo'));
 C.push(b('Divario di reddito = (reddito medio uomini − reddito medio donne) / reddito medio uomini. È lo stesso indicatore usato da Eurostat e dalle Linee guida.'));
@@ -101,7 +101,7 @@ C.push(p('Il Comitato precedente (2022-2026) era presieduto da Monica Orecchioni
 C.push(h2('Cosa fa il Comitato'));
 C.push(p('Il CPO promuove la parità tra iscritte, iscritti e tirocinanti: analizza i dati, propone iniziative al Consiglio, organizza eventi formativi, vigila contro le discriminazioni e redige il bilancio di genere.'));
 C.push(h2('Risorse'));
-C.push(p(['Budget assegnato dal Consiglio per il 2026: ', D.cpo.budget != null ? run(`${it(D.cpo.budget)} €`) : daFare('dato 6 della richiesta; se non assegnato, motivazione del Consiglio come chiedono le Linee guida')]));
+C.push(p(['Budget assegnato dal Consiglio per il 2026: ', D.cpo.budget != null ? run(`${it(D.cpo.budget)} €`) : daFare('da chiedere al Consiglio; se non assegnato, motivazione come chiedono le Linee guida')]));
 C.push(p(['Personale della Segreteria di supporto al CPO: ', D.cpo.personale || daFare('nominativo o ufficio di riferimento')]));
 C.push(p('Fino al 2025 il Comitato ha operato senza budget, a titolo gratuito o con sponsor.'));
 
@@ -113,7 +113,7 @@ C.push(h2('2026, primo anno del nuovo Comitato'));
 C.push(b('Nomina del Comitato (23 febbraio 2026) e avvio della collaborazione stabile con il CPO dell’Ordine di Ravenna e con gli altri Ordini professionali della provincia.'));
 C.push(b('Partecipazione al convegno “Zero disparità, più produttività – La certificazione della parità di genere” (Cesena, 4 giugno 2026), con Camera di Commercio della Romagna e Consigliera di Parità regionale.'));
 C.push(b('Check-up dei bilanci di genere 2023 e 2024 e confronto con 17 bilanci di altri Ordini.'));
-C.push(b('Richiesta dati al Consiglio e, tramite l’Ordine, a Cassa Ragionieri, Tribunale, OCC Romagna e Camera di Commercio (2 ottobre 2026).'));
+C.push(b('Richiesta dati all’Ordine e alla Fondazione (28 settembre 2026), call con la Presidente dell’Ordine (7 ottobre) e richieste a OCC Romagna (5 ottobre), Cassa Ragionieri, Tribunale e Camera di Commercio (12 ottobre).'));
 C.push(b([run('Questionario breve agli iscritti su conciliazione, carriera, DSA e inclusione. '), daFare('data di invio e numero di risposte')]));
 C.push(b(daFare('altre attività 2026 fino all’assemblea')));
 
@@ -220,11 +220,12 @@ C.push(p('Se i dati non arriveranno in tempo, questa parte sarà completata nel 
 
 // ---------------- 10 spese
 C.push(h1('10. Le spese dell’Ordine con la lente di genere'));
-C.push(p('È il cuore del “gender budgeting” secondo il Consiglio d’Europa, ripreso dalle Linee guida, ma nei 17 bilanci di Ordini che abbiamo esaminato nessuno lo applica. Dividiamo le spese del consuntivo 2025 in tre gruppi:'));
+C.push(p('È il cuore del “gender budgeting” secondo il Consiglio d’Europa, ripreso dalle Linee guida, ma nei 17 bilanci di Ordini che abbiamo esaminato nessuno lo applica. Dividiamo le spese 2025 dell’Ordine e della Fondazione in tre gruppi:'));
 C.push(b('neutre: non toccano in modo diverso donne e uomini (affitto, utenze, software, quote al Consiglio Nazionale);'));
-C.push(b('sensibili: hanno effetti diversi su donne e uomini a seconda di come sono organizzate (formazione, eventi, servizi agli iscritti, comunicazione);'));
-C.push(b('dirette a ridurre le diseguaglianze: attività del CPO, agevolazioni per maternità e cura.'));
-C.push(D.spese ? table(['Gruppo', 'Importo', '% sul totale'], D.spese, [4000, 2500, 2526]) : attesa(['Gruppo', 'Importo 2025', '% sul totale'], 'dato 7, consuntivo per capitolo dalla Tesoriera', [4000, 2500, 2526]));
+C.push(b('dirette a ridurre le diseguaglianze di genere: attività del CPO, progetti nelle scuole;'));
+C.push(b('attività socio-culturali: visite guidate, eventi sportivi e altre iniziative per gli iscritti, da leggere guardando chi vi partecipa.'));
+if (D.spese_note) C.push(p(D.spese_note));
+C.push(D.spese ? table(['Gruppo', 'Importo', '% sul totale'], D.spese, [4000, 2500, 2526]) : attesa(['Gruppo', 'Importo 2025', '% sul totale'], 'consuntivo 2025 per capitolo dalla Tesoriera', [4000, 2500, 2526]));
 
 // ---------------- 11 questionario
 C.push(h1('11. La voce degli iscritti: il questionario'));
@@ -253,15 +254,15 @@ C.push(p(daFare('data e firme dei componenti del CPO')));
 
 // ---------------- appendice
 C.push(h1('Appendice – Stato dei dati'));
-const stato = (v) => v ? 'arrivato' : 'in attesa';
+const stato = (v, k) => v ? 'inserito' : (D.ricevuti && D.ricevuti[k]) ? `ricevuto ${D.ricevuti[k]}, da inserire` : 'in attesa';
 C.push(table(['N.', 'Dato richiesto', 'A chi', 'Stato'], [
-  ['1', 'Iscrizioni e cancellazioni 2021-2025', 'Segreteria', stato(D.flussi_ufficiali)],
-  ['2', 'Iscritti e praticanti per genere 2021-2023', 'Segreteria', stato(D.iscritti.per_genere_2021_2022)],
-  ['3', 'Consiglio, cariche, organi, commissioni', 'Segreteria', stato(D.consiglio['2026-2030'] && D.organi)],
-  ['4', 'Eventi formativi 2025, relatrici e relatori', 'Segreteria', stato(D.formazione_eventi)],
-  ['5', 'Esoneri per maternità, paternità e cura', 'Segreteria', stato(D.esoneri)],
-  ['6', 'Budget CPO', 'Consiglio', stato(D.cpo.budget != null)],
-  ['7', 'Consuntivo 2025 per capitolo', 'Tesoriera', stato(D.spese)],
+  ['1', 'Iscrizioni e cancellazioni 2021-2025', 'Segreteria', stato(D.flussi_ufficiali, 'flussi')],
+  ['2', 'Iscritti e praticanti per genere 2021-2023', 'Segreteria', stato(D.iscritti.per_genere_2021_2022, 'serie')],
+  ['3', 'Consiglio, cariche, organi, commissioni', 'Segreteria', stato(D.consiglio['2026-2030'] && D.organi, 'organi')],
+  ['4', 'Eventi formativi 2025, relatrici e relatori', 'Segreteria', stato(D.formazione_eventi, 'eventi')],
+  ['5', 'Esoneri per maternità, paternità e cura', 'Segreteria', stato(D.esoneri, 'esoneri')],
+  ['6', 'Consuntivo 2025 per capitolo', 'Tesoriera', stato(D.spese, 'spese')],
+  ['7', 'Spese socio-culturali della Fondazione', 'Fondazione', stato(D.spese_note, 'fondazione')],
   ['8', 'Redditi Cassa Ragionieri', 'CNPR', stato(D.cassa_cnpr)],
   ['9', 'Incarichi del Tribunale', 'Tribunale di Forlì', stato(D.tribunale)],
   ['10', 'Gestori e incarichi', 'OCC Romagna', stato(D.occ)],
