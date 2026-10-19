@@ -76,7 +76,7 @@ C.push(table(['Dato', 'Fonte', 'Data di riferimento'], [
   ['Serie storica 2020-2023', 'Bilanci di genere 2023 e 2024 dell’Ordine', '31/12 di ogni anno'],
   ['Redditi e volume d’affari', 'Cassa Dottori Commercialisti (CNPADC)', 'Redditi 2023 e 2024'],
   ['Confronto nazionale', 'Questionario CNPO 2025 e bilancio di genere del CNDCEC', '31/12/2024'],
-  [daFare('Cassa Ragionieri, Tribunale, OCC, Camera di Commercio, spese'), 'Richieste di settembre-ottobre 2026', '…'],
+  [daFare('Cassa Ragionieri, OCC, Camera di Commercio, spese'), 'Richieste di settembre-ottobre 2026', '…'],
 ], [3000, 4026, 2000]));
 C.push(h2('Regole di calcolo'));
 C.push(b('Divario di reddito = (reddito medio uomini − reddito medio donne) / reddito medio uomini. È lo stesso indicatore usato da Eurostat e dalle Linee guida.'));
@@ -220,9 +220,10 @@ C.push(p('Questi dati dicono quanto il lavoro di cura pesa ancora sulle donne de
 
 // ---------------- 9 incarichi
 C.push(h1('9. Incarichi e cariche: una parte nuova'));
-C.push(p('Le Linee guida suggeriscono di guardare oltre l’Albo: chi riceve gli incarichi dal Tribunale e dagli organismi di composizione della crisi, chi siede nei collegi sindacali delle imprese. Pochi Ordini lo fanno (Reggio Emilia, Venezia, Parma). Noi aggiungiamo, dove possibile, anche il valore degli incarichi e non solo il numero.'));
+C.push(p('Le Linee guida suggeriscono di guardare oltre l’Albo: chi riceve gli incarichi dal Tribunale e dagli organismi di composizione della crisi, chi siede nei collegi sindacali delle imprese. Pochi Ordini lo fanno (Reggio Emilia, Venezia, Parma). Abbiamo chiesto i dati al Tribunale, all’OCC Romagna e alla Camera di Commercio, anche con il valore degli incarichi e non solo il numero.'));
 C.push(h2('Tribunale di Forlì'));
-C.push(D.tribunale ? table(['Tipo di incarico', 'Donne', 'Uomini', '% donne'], D.tribunale, [3800, 1600, 1600, 2026]) : attesa(['Tipo di incarico 2021-2025', 'Donne', 'Uomini', '% donne'], 'dato 9: curatele, liquidazioni, CTU, custodie, delegati alle vendite', [3800, 1600, 1600, 2026]));
+if (D.tribunale_nota && !D.tribunale) C.push(p(D.tribunale_nota));
+else C.push(D.tribunale ? table(['Tipo di incarico', 'Donne', 'Uomini', '% donne'], D.tribunale, [3800, 1600, 1600, 2026]) : attesa(['Tipo di incarico 2021-2025', 'Donne', 'Uomini', '% donne'], 'dato 9: curatele, liquidazioni, CTU, custodie, delegati alle vendite', [3800, 1600, 1600, 2026]));
 C.push(h2('OCC Romagna'));
 if (D.occ_nota && !D.occ) C.push(p(D.occ_nota));
 C.push(D.occ ? table(['', 'Donne', 'Uomini', '% donne'], D.occ, [3800, 1600, 1600, 2026]) : attesa(['Gestori iscritti a Forlì e incarichi 2021-2025', 'Donne', 'Uomini', '% donne'], 'dato 10', [3800, 1600, 1600, 2026]));
@@ -277,7 +278,7 @@ C.push(table(['N.', 'Dato richiesto', 'A chi', 'Stato'], [
   ['6', 'Consuntivo 2025 per capitolo', 'Tesoriera', stato(D.spese, 'spese')],
   ['7', 'Spese socio-culturali della Fondazione', 'Fondazione', stato(D.spese_note, 'fondazione')],
   ['8', 'Redditi Cassa Ragionieri', 'CNPR', stato(D.cassa_cnpr)],
-  ['9', 'Incarichi del Tribunale', 'Tribunale di Forlì', stato(D.tribunale)],
+  ['9', 'Incarichi del Tribunale', 'Tribunale di Forlì', D.tribunale ? 'inserito' : D.tribunale_nota ? 'non concessi' : 'in attesa'],
   ['10', 'Gestori e incarichi', 'OCC Romagna', stato(D.occ)],
   ['11', 'Sindaci e revisori', 'Camera di Commercio', stato(D.cciaa)],
   ['–', 'Questionario agli iscritti', 'CPO', stato(D.questionario)],

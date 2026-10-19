@@ -23,7 +23,7 @@ Aggiornata al 19/10/2026 (sera). Assemblea di presentazione: 26/11/2026, Cesena.
 | 12/10 | Segreteria | Esoneri 2025: 1 maternità, 1 paternità, 0 per cura | Inserito |
 | 12/10 | Segreteria | Nota sulle regole elettorali (quota 2/5 del genere meno rappresentato, Regolamento 2021 e 2025/2026; CDD con proporzione speculare) | Da verificare sulle fonti ufficiali prima di citarla: è un riassunto fatto con un assistente automatico |
 | 16/10 | Fondazione (Debora Bonavita), via Segreteria | Unica spesa socio-sportiva 2025: iscrizioni alla "Diabetes"; nessun altro evento. Allegati: scheda contabile, bilancio Fondazione 31/12/2025 (XBRL, PDF), scheda altri eventi 2025 | Testo inserito, importo da leggere negli allegati (PDF non ancora caricati) |
-| 13/10 | Tribunale, Presidente | Annotazione a mano con timbro sulla mail alla Marabini: richiesta autorizzata (lettura della grafia da confermare) | I dati non sono ancora arrivati |
+| 13/10 | Tribunale, Presidente | Annotazione a mano con timbro sulla mail alla Marabini | Dati negati (confermato da Emanuela il 19/10): il bilancio procede senza, con una nota |
 | 19/10 | OCC Romagna | Modulo Excel per gestori e incarichi 2021-2025 | Arrivato vuoto, senza numeri |
 | 19/10 | Cassa Dottori | PDF iscritti attivi e redditi 2025 | Stessi dati già nella bozza |
 
@@ -32,7 +32,6 @@ Aggiornata al 19/10/2026 (sera). Assemblea di presentazione: 26/11/2026, Cesena.
 - Consuntivo 2025 dell'Ordine per capitolo (Tesoriera)
 - Cassa Ragionieri
 - OCC Romagna (il modulo è arrivato vuoto)
-- Tribunale: Marabini e Zolini
 - Camera di Commercio
 - Questionario agli iscritti: data di invio e risposte
 - CPO 2026-2030: ruoli inseriti dal file; verificare il genere di un componente indicato come F nel file
