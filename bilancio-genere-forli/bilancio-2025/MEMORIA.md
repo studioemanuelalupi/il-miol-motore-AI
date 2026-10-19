@@ -18,6 +18,7 @@ Aggiornata al 19/10/2026. Assemblea di presentazione: 26/11/2026, Cesena.
 
 | Data | Da | Contenuto | Stato |
 |---|---|---|---|
+| 5/3 | Segreteria | Linee guida CN, bilancio 2024 in Word, estrazione Albo e praticanti 2024-2025 | Già usato nella bozza (stesso file dell'estrazione elaborata) |
 | 12/10 | Segreteria (Sara Maraldi) | 7 Excel: iscrizioni e cancellazioni 2021-2025; iscritti e praticanti 2021-2023; Consiglio 2022-26 e 2026-30; Consiglio di disciplina; commissioni; CPO e revisori; eventi 2025 con relatori | **Da caricare**: Gmail non permette di scaricare gli allegati, servono su Drive o in chat |
 | 12/10 | Segreteria | Esoneri 2025: 1 maternità, 1 paternità, 0 per cura | Inserito |
 | 12/10 | Segreteria | Nota sulle regole elettorali (quota 2/5 del genere meno rappresentato, Regolamento 2021 e 2025/2026; CDD con proporzione speculare) | Da verificare sulle fonti ufficiali prima di citarla: è un riassunto fatto con un assistente automatico |
