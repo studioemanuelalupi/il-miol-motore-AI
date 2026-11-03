@@ -369,7 +369,32 @@
    ]
   }
  },
- "cassa_cnpr": null,
+ "cassa_cnpr": [
+  [
+   "Iscritti attivi",
+   39,
+   60,
+   "–"
+  ],
+  [
+   "Reddito medio (Irpef)",
+   "58.806 €",
+   "71.637 €",
+   "17,9%"
+  ],
+  [
+   "Volume d’affari medio (IVA)",
+   "114.738 €",
+   "143.551 €",
+   "20,1%"
+  ],
+  [
+   "Divario di reddito 51-65 anni (27 donne, 41 uomini)",
+   "62.522 €",
+   "82.524 €",
+   "24,2%"
+  ]
+ ],
  "formazione_eventi": [
   [
    "2025",
@@ -398,12 +423,115 @@
   ]
  ],
  "tribunale": null,
- "occ": null,
- "cciaa": null,
+ "occ": [
+  [
+   "Gestori in elenco al 31/12/2021",
+   33,
+   28,
+   "54,1%"
+  ],
+  [
+   "Gestori in elenco al 31/12/2022",
+   34,
+   29,
+   "54,0%"
+  ],
+  [
+   "Gestori in elenco al 31/12/2023",
+   35,
+   30,
+   "53,8%"
+  ],
+  [
+   "Gestori in elenco al 31/12/2024",
+   35,
+   30,
+   "53,8%"
+  ],
+  [
+   "Gestori in elenco al 31/12/2025",
+   35,
+   30,
+   "53,8%"
+  ],
+  [
+   "Incarichi assegnati nel 2021",
+   70,
+   23,
+   "75,3%"
+  ],
+  [
+   "Incarichi assegnati nel 2022",
+   53,
+   88,
+   "37,6%"
+  ],
+  [
+   "Incarichi assegnati nel 2023",
+   83,
+   24,
+   "77,6%"
+  ],
+  [
+   "Incarichi assegnati nel 2024",
+   61,
+   54,
+   "53,0%"
+  ],
+  [
+   "Incarichi assegnati nel 2025",
+   53,
+   34,
+   "60,9%"
+  ],
+  [
+   "Incarichi 2021-2025, totale",
+   320,
+   223,
+   "58,9%"
+  ]
+ ],
+ "cciaa": [
+  [
+   "Presidente del collegio sindacale",
+   73,
+   294,
+   "19,9%",
+   "17,1%"
+  ],
+  [
+   "Sindaco effettivo",
+   257,
+   636,
+   "28,8%",
+   "26,7%"
+  ],
+  [
+   "Sindaco supplente",
+   263,
+   473,
+   "35,7%",
+   "35,4%"
+  ],
+  [
+   "Revisore legale",
+   155,
+   384,
+   "28,8%",
+   "29,7%"
+  ],
+  [
+   "Revisore unico",
+   62,
+   166,
+   "27,2%",
+   "20,3%"
+  ]
+ ],
  "spese": null,
  "questionario": null,
  "attivita_2025": null,
- "spese_note": "Fondazione: nel 2025 l’unica spesa per attività socio-culturali o sportive è l’iscrizione degli iscritti alla manifestazione “Diabetes” (importo da scheda contabile, da inserire). Non ci sono stati altri eventi culturali o sportivi.",
+ "spese_note": "Fondazione: nel 2025 l’unica spesa per attività socio-sportive è l’iscrizione di 18 partecipanti alla Diabetes Marathon (180 euro, 8 aprile 2025), su 29.615 euro di costi della produzione della Fondazione. Non ci sono stati altri eventi culturali o sportivi. Il genere dei partecipanti non è noto.",
  "ricevuti": {},
  "flussi_u50": {
   "2021": [
@@ -435,6 +563,35 @@
   "pct_relatrici": "27,7%",
   "solo_uomini": "12 su 51"
  },
- "occ_nota": "Il 19/10 è arrivato il modulo predisposto per l’OCC Romagna, ancora vuoto: i dati non sono stati compilati.",
- "tribunale_nota": "Il 12 ottobre 2026 abbiamo chiesto al Tribunale di Forlì gli incarichi 2021-2025 conferiti a commercialisti, per genere e tipo (procedure concorsuali, esecuzioni, volontaria giurisdizione). Il Tribunale non ha concesso i dati. La rilevazione resta tra gli obiettivi dei prossimi bilanci, anche con altre fonti."
+ "tribunale_nota": "Il 12 ottobre 2026 abbiamo chiesto al Tribunale di Forlì gli incarichi 2021-2025 conferiti a commercialisti, per genere e tipo (procedure concorsuali, esecuzioni, volontaria giurisdizione). Il Tribunale non ha concesso i dati. La rilevazione resta tra gli obiettivi dei prossimi bilanci, anche con altre fonti. Alla fine di questo capitolo riportiamo un indicatore indiretto ricavato dal Registro delle imprese.",
+ "cnpr_testo": "Tra i ragionieri commercialisti iscritti alla Cassa Ragionieri il divario è molto più basso che tra i dottori commercialisti: 17,9% a Forlì, contro il 26,6% dell’Emilia-Romagna e il 29,2% dell’Italia. Sono però 99 persone, quasi tutte sopra i 50 anni: tra i 51 e i 65 anni il divario sale al 24,2%, oltre i 65 anni è quasi nullo. Le classi sotto i 50 anni hanno meno di 5 iscritti e non vengono pubblicate.",
+ "occ_testo": "Tra i gestori della crisi iscritti all’Ordine le donne sono la maggioranza (35 su 65 nel 2025, il 54%) e ricevono più incarichi: 320 su 543 in cinque anni, il 59%. In media 9 incarichi per gestrice contro 7-8 per gestore. Il 2022 va in senso opposto (88 incarichi a uomini su 141): il dato andrà verificato con l’OCC.",
+ "cciaa_testo": [
+  "Negli organi di controllo delle imprese della provincia le donne sono meno di una su tre, mentre tra gli iscritti all’Ordine sono il 46%. Più si sale, meno donne si trovano: sono il 36% dei sindaci supplenti, il 29% dei sindaci effettivi e solo il 20% dei presidenti di collegio sindacale. In cinque anni la quota è cresciuta poco (presidenti dal 17,1% al 19,9%).",
+  "Il dato per età mostra che la differenza è soprattutto generazionale: tra i presidenti di collegio con 30-49 anni donne e uomini sono alla pari (15 e 15), tra 50 e 69 anni le donne sono 52 contro 227, oltre i 70 anni 6 contro 52."
+ ],
+ "cciaa_procedure": [
+  [
+   "Curatore fallimentare",
+   125,
+   162,
+   "43,6%",
+   "43,6%"
+  ],
+  [
+   "Commissario giudiziale",
+   11,
+   39,
+   "22,0%",
+   "32,3%"
+  ],
+  [
+   "Liquidatore giudiziario",
+   17,
+   16,
+   "51,5%",
+   "47,7%"
+  ]
+ ],
+ "cciaa_proc_testo": "Non avendo i dati del Tribunale, il Registro delle imprese offre almeno un’indicazione: tra i curatori fallimentari registrati le donne sono stabilmente il 44%, tra i liquidatori giudiziari circa la metà, tra i commissari giudiziali solo il 22%, in calo dal 32% del 2021."
 }

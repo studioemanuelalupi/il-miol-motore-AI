@@ -76,7 +76,7 @@ C.push(table(['Dato', 'Fonte', 'Data di riferimento'], [
   ['Serie storica 2020-2023', 'Bilanci di genere 2023 e 2024 dell’Ordine', '31/12 di ogni anno'],
   ['Redditi e volume d’affari', 'Cassa Dottori Commercialisti (CNPADC)', 'Redditi 2023 e 2024'],
   ['Confronto nazionale', 'Questionario CNPO 2025 e bilancio di genere del CNDCEC', '31/12/2024'],
-  [daFare('Cassa Ragionieri, OCC, Camera di Commercio, spese'), 'Richieste di settembre-ottobre 2026', '…'],
+  [daFare('consuntivo delle spese 2025'), 'Richieste di settembre-ottobre 2026', '…'],
 ], [3000, 4026, 2000]));
 C.push(h2('Regole di calcolo'));
 C.push(b('Divario di reddito = (reddito medio uomini − reddito medio donne) / reddito medio uomini. È lo stesso indicatore usato da Eurostat e dalle Linee guida.'));
@@ -206,7 +206,9 @@ C.push(table(['Reddito delle donne in % di quello degli uomini', ...terr], Objec
 fonte('CNPADC, redditi 2024. Fino a 30 anni a Forlì gli iscritti attivi sono 19 (13 donne, 6 uomini); oltre 65 anni le donne sono 8: valori da leggere con prudenza.');
 C.push(p('Fino a 50 anni le professioniste di Forlì stanno meglio che in regione e in Italia. Il divario complessivo così alto nasce soprattutto tra i 51 e i 65 anni, dove si concentrano gli uomini con i redditi più alti, e dal fatto che le donne iscritte sono più giovani. Il problema non è tanto l’ingresso nella professione, quanto la crescita a metà carriera.'));
 C.push(h2('Cassa Ragionieri'));
-C.push(D.cassa_cnpr ? table(['', 'Donne', 'Uomini', 'Divario'], D.cassa_cnpr, [3800, 1700, 1700, 1826]) : attesa(['Iscritti CNPR di Forlì', 'Donne', 'Uomini', 'Divario'], 'dato 8, reddito e volume d’affari medi per genere ed età', [3800, 1700, 1700, 1826]));
+C.push(D.cassa_cnpr ? table(['Iscritti attivi CNPR, Ordine di Forlì', 'Donne', 'Uomini', 'Divario'], D.cassa_cnpr, [3800, 1700, 1700, 1826]) : attesa(['Iscritti CNPR di Forlì', 'Donne', 'Uomini', 'Divario'], 'dato 8, reddito e volume d’affari medi per genere ed età', [3800, 1700, 1700, 1826]));
+if (D.cassa_cnpr) fonte('Cassa Ragionieri (CNPR), dati comunicati nel 2025, trasmessi il 21/10/2026.');
+if (D.cnpr_testo) [].concat(D.cnpr_testo).forEach(t => C.push(p(t)));
 
 // ---------------- 8 formazione
 C.push(h1('8. Formazione e conciliazione'));
@@ -227,8 +229,13 @@ else C.push(D.tribunale ? table(['Tipo di incarico', 'Donne', 'Uomini', '% donne
 C.push(h2('OCC Romagna'));
 if (D.occ_nota && !D.occ) C.push(p(D.occ_nota));
 C.push(D.occ ? table(['', 'Donne', 'Uomini', '% donne'], D.occ, [3800, 1600, 1600, 2026]) : attesa(['Gestori iscritti a Forlì e incarichi 2021-2025', 'Donne', 'Uomini', '% donne'], 'dato 10', [3800, 1600, 1600, 2026]));
+if (D.occ) fonte('OCC Romagna, prospetto compilato il 30/10/2026. Gestori iscritti all’Ordine di Forlì.');
+if (D.occ_testo) [].concat(D.occ_testo).forEach(t => C.push(p(t)));
 C.push(h2('Collegi sindacali e revisione nelle imprese'));
-C.push(D.cciaa ? table(['Carica al 31/12/2025', 'Donne', 'Uomini', '% donne'], D.cciaa, [3800, 1600, 1600, 2026]) : attesa(['Carica al 31/12/2025', 'Donne', 'Uomini', '% donne'], 'dato 11, Camera di Commercio della Romagna', [3800, 1600, 1600, 2026]));
+C.push(D.cciaa ? table(['Carica, imprese della provincia', 'Donne 2025', 'Uomini 2025', '% donne 2025', '% donne 2021'], D.cciaa, [3300, 1400, 1400, 1450, 1476]) : attesa(['Carica al 31/12/2025', 'Donne', 'Uomini', '% donne'], 'dato 11, Camera di Commercio della Romagna', [3800, 1600, 1600, 2026]));
+if (D.cciaa) fonte('Elaborazione a cura dell’Osservatorio economico e sociale della Camera di commercio della Romagna - Forlì-Cesena e Rimini. Persone con carica in imprese registrate con sede in provincia di Forlì-Cesena; ogni persona è contata con la prima carica in ciascuna impresa. Comprende tutte le persone con la carica, non solo i commercialisti.');
+if (D.cciaa_testo) [].concat(D.cciaa_testo).forEach(t => C.push(p(t)));
+if (D.cciaa_procedure) { C.push(h2('Ruoli nelle procedure concorsuali dal Registro delle imprese')); C.push(table(['Ruolo registrato', 'Donne 2025', 'Uomini 2025', '% donne 2025', '% donne 2021'], D.cciaa_procedure, [3300, 1400, 1400, 1450, 1476])); fonte('Camera di commercio della Romagna, stessa elaborazione. Sono le persone indicate nel Registro delle imprese come curatore, commissario o liquidatore giudiziario di imprese registrate in provincia: un indicatore indiretto, non il numero degli incarichi conferiti nell’anno.'); if (D.cciaa_proc_testo) [].concat(D.cciaa_proc_testo).forEach(t => C.push(p(t))); }
 C.push(p('Se i dati non arriveranno in tempo, questa parte sarà completata nel bilancio 2026 e resterà qui come impegno.'));
 
 // ---------------- 10 spese
