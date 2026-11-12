@@ -417,7 +417,9 @@ list([
   'Soggettivo: debitore sovraindebitato diverso dal consumatore (art. 74 c.1): impresa minore, imprenditore agricolo, start-up innovativa, professionista, e chi ha debiti anche di natura imprenditoriale.',
   'Due strade: (1) proposta che consente di PROSEGUIRE l’attività imprenditoriale o professionale (art. 74 c.1); (2) fuori da questo caso, solo se c’è apporto di RISORSE ESTERNE che aumentano in misura apprezzabile la soddisfazione dei creditori (art. 74 c.2). Senza continuità e senza finanza esterna il concordato minore non si può fare: si va in liquidazione controllata.',
   'Inammissibilità (art. 77): mancano i documenti degli artt. 75-76; il debitore supera i limiti dell’impresa minore; è stato esdebitato nei 5 anni precedenti o già 2 volte; risultano atti diretti a frodare i creditori.',
-  'Avvocato: per il concordato minore di regola serve il difensore (art. 9 CCII) [VERIFICARE la prassi del Tribunale].',
+  'Avvocato: serve. L’art. 9 c.2 CCII impone al debitore di stare in giudizio con un difensore, salvo i casi in cui la legge dispone diversamente. L’esonero espresso c’è solo per la ristrutturazione del consumatore (art. 68 c.1); per il concordato minore nessuna norma lo prevede. Il ricorso va quindi firmato digitalmente da un avvocato con procura.',
+  'Advisor non avvocato (es. commercialista): può preparare proposta, piano, business plan e numeri, ma non sostituisce l’avvocato: non firma il ricorso e non deposita. Il suo compenso non è prededucibile (ha solo il privilegio dell’art. 2751-bis n.2 c.c.). L’advisor non può essere il Gestore OCC della stessa pratica.',
+  'Prassi: qualche Tribunale ha linee guida più permissive, ma non conviene rischiare una dichiarazione di inammissibilità: nel concordato minore l’avvocato si mette sempre.',
   'Rinvio: per quanto non previsto si applicano le norme sul concordato preventivo, in quanto compatibili (art. 74 c.4).',
 ]);
 C.push(h2('Cosa si può proporre'));
@@ -646,7 +648,7 @@ C.push(h1('11. Le 4 procedure a confronto'));
 table(['', 'RDC consumatore', 'Concordato minore', 'Liquidazione controllata', 'Incapiente'], [
   ['Articoli', '67-73', '74-83', '268-277 (+278-282)', '283'],
   ['Chi', 'Solo consumatore', 'Non consumatore (impresa minore, professionista, agricolo...)', 'Tutti i sovraindebitati', 'Persona fisica senza alcuna utilità'],
-  ['Avvocato', 'Non necessario (prevalente)', 'Sì (di regola)', 'Prassi non uniforme', 'Prassi non uniforme'],
+  ['Avvocato', 'Non necessario (art. 68 c.1)', 'Sì, obbligatorio (art. 9 c.2); l’advisor non basta', 'Prassi non uniforme', 'Prassi non uniforme'],
   ['Voto creditori', 'No', 'Sì (silenzio = sì)', 'No', 'No (opposizione)'],
   ['Si tengono i beni?', 'Sì, se il piano lo prevede', 'Sì, se il piano lo prevede', 'No: tutto va venduto (salvo esclusi)', 'Non ci sono beni'],
   ['Relazione OCC', 'art. 68 c.2-3', 'art. 76 c.2-3 (più ampia: convenienza, classi)', 'art. 269 c.2', 'art. 283'],
@@ -848,7 +850,7 @@ facsimile([
 C.push(h1('Appendice C – Fonti e aggiornamento', false));
 list([
   'Testo di riferimento: D.Lgs. 12 gennaio 2019 n. 14 (CCII), come modificato dal D.Lgs. 83/2022 e dal D.Lgs. 136/2024 (correttivo-ter, in vigore dal 28 settembre 2024). Consultare sempre il testo vigente su Normattiva.',
-  'Punti segnati [VERIFICARE]: avvocato nelle procedure diverse dalla RDC, testo vigente degli artt. 80, 268 c.3 e 283 dopo il correttivo, termine (3 o 4 anni) e soglia delle sopravvenienze nell’esdebitazione dell’incapiente, compenso OCC ridotto, importo dell’assegno sociale dell’anno.',
+  'Punti segnati [VERIFICARE]: avvocato nella liquidazione controllata e nell’esdebitazione dell’incapiente, testo vigente degli artt. 80, 268 c.3 e 283 dopo il correttivo, termine (3 o 4 anni) e soglia delle sopravvenienze nell’esdebitazione dell’incapiente, compenso OCC ridotto, importo dell’assegno sociale dell’anno.',
   'Per i criteri pratici dei giudici (Forlì e altri Tribunali) vedi anche il documento dello studio “Sovraindebitamento: i criteri dei giudici” nella stessa cartella.',
 ]);
 
