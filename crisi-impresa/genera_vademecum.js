@@ -518,7 +518,9 @@ list([
 ]);
 C.push(h2('Il ricorso del debitore e la relazione (art. 269)'));
 list([
-  'Presentazione: il ricorso è presentato dal debitore con l’assistenza dell’OCC (art. 269 c.1). Sulla necessità dell’avvocato le prassi non sono uniformi [VERIFICARE la prassi del Tribunale].',
+  'Presentazione: “il ricorso può essere presentato personalmente dal debitore, con l’assistenza dell’OCC” (art. 269 c.1). Quindi, sulla domanda del debitore, l’avvocato NON è obbligatorio: basta l’OCC.',
+  'Avvocato facoltativo: il debitore può comunque farsi assistere da un difensore. Alcuni Tribunali lo hanno ammesso senza problemi (es. Cuneo 2022), ma serve SEMPRE anche l’assistenza dell’OCC: Grosseto (2022) ha dichiarato inammissibile un ricorso firmato solo dall’avvocato senza OCC. Il compenso dell’avvocato non è prededucibile.',
+  'Domanda del creditore: se è un creditore a chiedere la liquidazione, il creditore deve avere l’avvocato; il debitore che vuole difendersi in quel procedimento è prudente che si costituisca con un difensore (art. 9 c.2).',
   'Relazione OCC (art. 269 c.2): deve esporre una valutazione sulla completezza e attendibilità della documentazione depositata e illustrare la situazione economica, patrimoniale e finanziaria del debitore.',
   'Comunicazione al fisco: anche qui l’OCC avvisa entro 7 giorni agente della riscossione e uffici fiscali.',
   'Documenti: in pratica gli stessi delle altre procedure (elenco creditori, beni, redditi e dichiarazioni dei 3 anni, atti dei 5 anni, spese familiari). Per le imprese: bilanci e scritture contabili.',
@@ -648,7 +650,7 @@ C.push(h1('11. Le 4 procedure a confronto'));
 table(['', 'RDC consumatore', 'Concordato minore', 'Liquidazione controllata', 'Incapiente'], [
   ['Articoli', '67-73', '74-83', '268-277 (+278-282)', '283'],
   ['Chi', 'Solo consumatore', 'Non consumatore (impresa minore, professionista, agricolo...)', 'Tutti i sovraindebitati', 'Persona fisica senza alcuna utilità'],
-  ['Avvocato', 'Non necessario (art. 68 c.1)', 'Sì, obbligatorio (art. 9 c.2); l’advisor non basta', 'Prassi non uniforme', 'Prassi non uniforme'],
+  ['Avvocato', 'Non necessario (art. 68 c.1)', 'Sì, obbligatorio (art. 9 c.2); l’advisor non basta', 'Non obbligatorio sulla domanda del debitore (art. 269 c.1: basta l’OCC)', 'Prassi non uniforme'],
   ['Voto creditori', 'No', 'Sì (silenzio = sì)', 'No', 'No (opposizione)'],
   ['Si tengono i beni?', 'Sì, se il piano lo prevede', 'Sì, se il piano lo prevede', 'No: tutto va venduto (salvo esclusi)', 'Non ci sono beni'],
   ['Relazione OCC', 'art. 68 c.2-3', 'art. 76 c.2-3 (più ampia: convenienza, classi)', 'art. 269 c.2', 'art. 283'],
@@ -850,7 +852,7 @@ facsimile([
 C.push(h1('Appendice C – Fonti e aggiornamento', false));
 list([
   'Testo di riferimento: D.Lgs. 12 gennaio 2019 n. 14 (CCII), come modificato dal D.Lgs. 83/2022 e dal D.Lgs. 136/2024 (correttivo-ter, in vigore dal 28 settembre 2024). Consultare sempre il testo vigente su Normattiva.',
-  'Punti segnati [VERIFICARE]: avvocato nella liquidazione controllata e nell’esdebitazione dell’incapiente, testo vigente degli artt. 80, 268 c.3 e 283 dopo il correttivo, termine (3 o 4 anni) e soglia delle sopravvenienze nell’esdebitazione dell’incapiente, compenso OCC ridotto, importo dell’assegno sociale dell’anno.',
+  'Punti segnati [VERIFICARE]: avvocato nell’esdebitazione dell’incapiente, testo vigente degli artt. 80, 268 c.3 e 283 dopo il correttivo, termine (3 o 4 anni) e soglia delle sopravvenienze nell’esdebitazione dell’incapiente, compenso OCC ridotto, importo dell’assegno sociale dell’anno.',
   'Per i criteri pratici dei giudici (Forlì e altri Tribunali) vedi anche il documento dello studio “Sovraindebitamento: i criteri dei giudici” nella stessa cartella.',
 ]);
 
