@@ -43,6 +43,12 @@ Aggiornata al 3/11/2026. Assemblea di presentazione: 26/11/2026, Cesena.
 - Avvisare la Camera di Commercio prima della pubblicazione (lo chiedono)
 - Allegati Gmail: si scaricano con get_message RAW e decodifica MIME (script estrai.py nello scratchpad)
 
+## Fascicolo dati sul Drive (16/11)
+
+- Cartella "BILANCIO DI GENERE 2025 - FASCICOLO DATI" dentro "PARITA DI GENERE", con 10 sottocartelle e indice "00 - INDICE E VERIFICA DATI.txt"
+- Manca solo il bilancio 2024 in Word nella sottocartella 09 (troppo grande per il caricamento; l'originale e' gia' in PARITA DI GENERE)
+- 16/11: il consuntivo della Tesoriera non e' arrivato; il sollecito del 3/11 e' ancora in bozza
+
 ## Controlli da fare
 
 - Praticanti 2023: il bilancio 2024 diceva 28, l'estrazione ne conta 29
