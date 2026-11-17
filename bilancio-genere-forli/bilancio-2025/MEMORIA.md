@@ -55,3 +55,12 @@ Aggiornata al 3/11/2026. Assemblea di presentazione: 26/11/2026, Cesena.
 - Cancellazioni 2023: manca il motivo per 8 casi
 - Eventi: chi è in aula e in webinar conta due volte (51 righe)
 - OCC 2022: verificare il dato (88 incarichi a uomini su 141, anno in controtendenza)
+
+## Controllo cartella Gmail "CPO 2026-2030" (17/11)
+
+- Nessun messaggio nuovo dal 16/11. Esaminate tutte le 33 conversazioni con allegati
+- Aggiunti nel fascicolo Drive, sottocartella 08: Regolamento CPO (CN 22/6/2023), Informativa CN 88/2025 (questionario CPO nazionale, giugno-luglio 2025), elenco candidati elezioni gennaio 2026, adesione Consulenti del Lavoro FC all'evento 19/6 (delibera 27/3/2026), convocazione assemblea CPO ER 23/9 per il rappresentante nazionale
+- Utili per "attivita' 2026": evento 19/6 accreditato al CN (crediti A2.3, A2.4, B2.12); il CPO Avvocati si e' ritirato; posti 66 commercialisti (Forli' e Ravenna) e 34 consulenti del lavoro; SEAC ha concesso 500 euro (non 1.000); sala del Museo della Marineria pagata dai Consulenti del Lavoro con sconto del 50%
+- Rete regionale CPO ER: rubrica dei Presidenti (marzo), richiesta dei delegati di Consiglio (23/3)
+- Nella cartella NON ci sono: consuntivo della Tesoriera, budget CPO, attivita' 2025 del CPO precedente, risultati del questionario, recepimento direttiva UE 2023/970
+- Il modulo OCC "Monitoraggio statistico 2025" e' un modello vuoto per i gestori: non serve al bilancio
