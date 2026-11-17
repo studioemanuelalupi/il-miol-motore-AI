@@ -87,3 +87,4 @@ Aggiornata al 3/11/2026. Assemblea di presentazione: 26/11/2026, Cesena.
 - Online ma non scaricabili da qui: Varese 31/12/2025, Pescara consuntivo 2025, Pisa 2023, Taranto 2024, Arezzo preventivo 2025
 - Inseriti in bozza: personale dell'Ordine (2 dipendenti donne, Valmori e Maraldi, confermato da Emanuela); "no women no panel" negli obiettivi; confronto budget con Ancona. Parti in giallo scese a 9
 - 17/11: questionario NON partito (Emanuela). In bozza presentato come azione 2026-2027 (cap. 11, attivita' 2026, obiettivi, appendice). Parti in giallo: 6
+- 17/11: chiuse 4 parti: direttiva UE (d.lgs. 96/2026 in vigore dal 7/6/2026, da fonti secondarie concordi), attivita' 2025 (dal bilancio 2024 e dalle mail), attivita' 2026 (budget, convegno 19/6, rete regionale, programma del mandato), spese (riclassificazione dell'Ordine rinviata al bilancio 2026, nuovo obiettivo). Resta solo: data e firme

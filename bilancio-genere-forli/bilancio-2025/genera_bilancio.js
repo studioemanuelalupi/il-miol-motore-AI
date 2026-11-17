@@ -77,7 +77,7 @@ C.push(table(['Dato', 'Fonte', 'Data di riferimento'], [
   ['Serie storica 2020-2023', 'Bilanci di genere 2023 e 2024 dell’Ordine', '31/12 di ogni anno'],
   ['Redditi e volume d’affari', 'Cassa Dottori Commercialisti (CNPADC)', 'Redditi 2023 e 2024'],
   ['Confronto nazionale', 'Questionario CNPO 2025 e bilancio di genere del CNDCEC', '31/12/2024'],
-  [daFare('consuntivo delle spese 2025'), 'Richieste di settembre-ottobre 2026', '…'],
+  ['Spese', 'Bilancio della Fondazione al 31/12/2025; stanziamento CPO nel bilancio di previsione 2026 dell’Ordine', '2025-2026'],
 ], [3000, 4026, 2000]));
 C.push(h2('Regole di calcolo'));
 C.push(b('Divario di reddito = (reddito medio uomini − reddito medio donne) / reddito medio uomini. È lo stesso indicatore usato da Eurostat e dalle Linee guida.'));
@@ -91,7 +91,7 @@ C.push(h1('2. Il quadro normativo in breve'));
 C.push(b('Costituzione, artt. 3, 37, 51 e 117: uguaglianza, parità nel lavoro e nell’accesso alle cariche.'));
 C.push(b('Codice delle pari opportunità (d.lgs. 198/2006) e legge 162/2021 sulla parità salariale, che ha introdotto la certificazione della parità di genere (UNI/PdR 125:2022).'));
 C.push(b('D.lgs. 139/2005 sull’ordinamento della professione e Regolamento dei Comitati Pari Opportunità degli Ordini.'));
-C.push(p([run('Direttiva (UE) 2023/970 del 10 maggio 2023 sulla trasparenza retributiva: gli Stati dovevano recepirla entro il 7 giugno 2026. '), daFare('stato del recepimento in Italia alla data del bilancio')]));
+C.push(p([run('Direttiva (UE) 2023/970 del 10 maggio 2023 sulla trasparenza retributiva, recepita in Italia con il d.lgs. 7 maggio 2026, n. 96, in vigore dal 7 giugno 2026. Tra l’altro vieta di chiedere ai candidati la retribuzione precedente e obbliga i datori di lavoro con almeno 100 dipendenti a comunicare periodicamente il divario retributivo di genere; se il divario supera il 5% senza giustificazione oggettiva, va avviata una valutazione congiunta con le rappresentanze dei lavoratori.')]));
 C.push(p('Per la nostra professione la direttiva conta due volte: negli studi come datori di lavoro e verso le imprese clienti, che dovranno misurare e comunicare il proprio divario retributivo.'));
 
 // ---------------- 3 CPO
@@ -119,7 +119,10 @@ C.push(b('Partecipazione al convegno “Zero disparità, più produttività – 
 C.push(b('Check-up dei bilanci di genere 2023 e 2024 e confronto con 17 bilanci di altri Ordini.'));
 C.push(b('Richiesta dati all’Ordine e alla Fondazione (28 settembre 2026), call con la Presidente dell’Ordine (7 ottobre) e richieste a OCC Romagna (5 ottobre), Cassa Ragionieri, Tribunale e Camera di Commercio (12 ottobre).'));
 C.push(b('Preparato il questionario breve agli iscritti su conciliazione, carriera, DSA e inclusione: sarà inviato nel 2026-2027 (capitolo 11).'));
-C.push(b(daFare('altre attività 2026 fino all’assemblea')));
+C.push(b('Primo stanziamento proprio del CPO: 1.500 euro nel bilancio di previsione 2026, destinati alle attività formative (capitolo 3).'));
+C.push(b('Convegno “Comunicazione e leadership di genere: differenze tra universo maschile e femminile” (Cesenatico, Museo della Marineria, 19 giugno 2026, ore 15-18), relatrice Roberta Fabbri: organizzato insieme all’Ordine dei Consulenti del Lavoro di Forlì-Cesena (delibera del 27 marzo 2026) e alla Fondazione, accreditato dal Consiglio Nazionale anche per la deontologia, 100 posti (66 per commercialisti di Forlì e Ravenna, 34 per consulenti del lavoro), con il contributo di uno sponsor privato di 500 euro.'));
+C.push(b('Rete regionale: rubrica dei Presidenti dei CPO dell’Emilia-Romagna e coinvolgimento dei Consiglieri delegati (marzo 2026); assemblea dei Presidenti a Bologna (23 settembre 2026) che ha eletto la rappresentante regionale nel Comitato Nazionale; riunioni del coordinamento regionale del 16 e 24 novembre 2026.'));
+C.push(b('Programma del mandato, dai verbali del Comitato: un punto d’ascolto per iscritte e iscritti, progetti di educazione fiscale nelle scuole, un desk per i tirocinanti, formazione sulle pari opportunità e la rete con gli altri Ordini della provincia e con il CPO di Ravenna.'));
 
 // ---------------- 5 contesto iscritti
 C.push(h1('5. Chi siamo: iscritte e iscritti'));
@@ -249,7 +252,7 @@ C.push(b('neutre: non toccano in modo diverso donne e uomini (affitto, utenze, s
 C.push(b('dirette a ridurre le diseguaglianze di genere: attività del CPO, progetti nelle scuole;'));
 C.push(b('attività socio-culturali: visite guidate, eventi sportivi e altre iniziative per gli iscritti, da leggere guardando chi vi partecipa.'));
 if (D.spese_note) C.push(p(D.spese_note));
-C.push(D.spese ? table(['Gruppo', 'Importo', '% sul totale'], D.spese, [4000, 2500, 2526]) : attesa(['Gruppo', 'Importo 2025', '% sul totale'], 'consuntivo 2025 per capitolo dalla Tesoriera', [4000, 2500, 2526]));
+C.push(D.spese ? table(['Gruppo', 'Importo', '% sul totale'], D.spese, [4000, 2500, 2526]) : p('Per il 2025 la riclassificazione completa delle spese dell’Ordine non è stata possibile, perché il consuntivo per capitolo non era disponibile in tempo per questo bilancio. Il metodo è applicato qui alla Fondazione e sarà esteso all’Ordine dal bilancio di genere 2026, quando il CPO dovrà rendicontare anche il proprio primo stanziamento (1.500 euro nel bilancio di previsione 2026). È uno degli obiettivi del capitolo 12.'));
 
 // ---------------- 11 questionario
 C.push(h1('11. La voce degli iscritti: il questionario'));
@@ -272,6 +275,7 @@ C.push(table(['Obiettivo', 'Indicatore', 'Partenza 2025', 'Traguardo 2027'], [
   ['Nessun panel di soli uomini (“no women no panel”)', 'Eventi con soli relatori uomini', D.eventi_kpi.solo_uomini, '0 tra gli eventi con 3 o più relatori: il CPO propone al Consiglio di adottarlo come regola per gli eventi dell’Ordine'],
   ['Presidenze delle commissioni', 'Commissioni presiedute da donne', '1 su 4', 'almeno 2 su 4 al prossimo rinnovo'],
   ['Il CPO ha risorse', 'Budget assegnato', 'nessuno (1.500 € nel preventivo 2026)', 'stanziamento confermato nel preventivo 2027'],
+  ['Spese con la lente di genere', 'Bilancio riclassificato in tre gruppi', 'solo Fondazione (2025)', 'Ordine e Fondazione (bilancio 2026)'],
   ['Ascoltare gli iscritti', 'Risposte al questionario', 'non ancora rilevato (primo invio 2026-2027)', 'almeno 25% degli iscritti'],
   ['Divario di reddito', 'Divario Forlì rispetto alla media regionale', '+6,1 punti', 'sotto la media regionale entro il 2028'],
   ['Bilancio accessibile', 'Sintesi facile da leggere e PDF per sintesi vocale', 'sì (2025)', 'sì, anche versione audio'],
@@ -293,7 +297,7 @@ C.push(table(['N.', 'Dato richiesto', 'A chi', 'Stato'], [
   ['3', 'Consiglio, cariche, organi, commissioni', 'Segreteria', stato(D.consiglio['2026-2030'] && D.organi, 'organi')],
   ['4', 'Eventi formativi 2025, relatrici e relatori', 'Segreteria', stato(D.formazione_eventi, 'eventi')],
   ['5', 'Esoneri per maternità, paternità e cura', 'Segreteria', stato(D.esoneri, 'esoneri')],
-  ['6', 'Consuntivo 2025 per capitolo', 'Tesoriera', stato(D.spese, 'spese')],
+  ['6', 'Consuntivo 2025 per capitolo', 'Tesoriera', D.spese ? 'inserito' : 'non disponibile in tempo: dal bilancio 2026'],
   ['7', 'Spese socio-culturali della Fondazione', 'Fondazione', stato(D.spese_note, 'fondazione')],
   ['8', 'Redditi Cassa Ragionieri', 'CNPR', stato(D.cassa_cnpr)],
   ['9', 'Incarichi del Tribunale', 'Tribunale di Forlì', D.tribunale ? 'inserito' : D.tribunale_nota ? 'non concessi' : 'in attesa'],
