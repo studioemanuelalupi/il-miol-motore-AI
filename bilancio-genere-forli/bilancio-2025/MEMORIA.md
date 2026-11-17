@@ -35,7 +35,8 @@ Aggiornata al 3/11/2026. Assemblea di presentazione: 26/11/2026, Cesena.
 - Consuntivo 2025 dell'Ordine per capitolo (Tesoriera)
 - Questionario agli iscritti: data di invio e risposte
 - CPO 2026-2030: ruoli inseriti dal file; verificare il genere di un componente indicato come F nel file
-- Attività 2025 del CPO precedente; budget CPO (non era nella richiesta del 28/9)
+- Attività 2025 del CPO precedente
+- 17/11: budget CPO 2026 = 1.500 € per attività formative nel preventivo (prima volta, conferma di Emanuela). Inserito in bozza
 
 ## Prossimi passi
 

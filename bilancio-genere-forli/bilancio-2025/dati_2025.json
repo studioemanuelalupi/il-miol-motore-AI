@@ -1,597 +1,597 @@
 {
- "_nota": "Dati del Bilancio di genere 2025. I campi null sono in attesa: quando arrivano, inserirli qui e rigenerare con: node genera_bilancio.js",
- "iscritti": {
-  "serie_totali": {
-   "2020": [
-    634,
-    16
-   ],
-   "2021": [
-    637,
-    14
-   ],
-   "2022": [
-    639,
-    11
-   ],
-   "2023": [
-    641,
-    13
-   ],
-   "2024": [
-    634,
-    13
-   ],
-   "2025": [
-    628,
-    11
-   ]
+  "_nota": "Dati del Bilancio di genere 2025. I campi null sono in attesa: quando arrivano, inserirli qui e rigenerare con: node genera_bilancio.js",
+  "iscritti": {
+    "serie_totali": {
+      "2020": [
+        634,
+        16
+      ],
+      "2021": [
+        637,
+        14
+      ],
+      "2022": [
+        639,
+        11
+      ],
+      "2023": [
+        641,
+        13
+      ],
+      "2024": [
+        634,
+        13
+      ],
+      "2025": [
+        628,
+        11
+      ]
+    },
+    "per_genere": {
+      "2021": [
+        292,
+        359
+      ],
+      "2022": [
+        296,
+        354
+      ],
+      "2023": [
+        301,
+        353
+      ],
+      "2024": [
+        299,
+        348
+      ],
+      "2025": [
+        292,
+        347
+      ]
+    },
+    "per_genere_2021_2022": true,
+    "sezioni_2025": {
+      "Albo sez. A": [
+        283,
+        342
+      ],
+      "Albo sez. B": [
+        1,
+        2
+      ],
+      "Elenco speciale": [
+        8,
+        3
+      ]
+    },
+    "sezioni_2024": {
+      "Albo sez. A": [
+        287,
+        343
+      ],
+      "Albo sez. B": [
+        1,
+        2
+      ],
+      "Elenco speciale": [
+        11,
+        3
+      ]
+    },
+    "classi_eta_2025": {
+      "Fino a 35": [
+        28,
+        25
+      ],
+      "36-45": [
+        60,
+        38
+      ],
+      "46-55": [
+        99,
+        92
+      ],
+      "56-65": [
+        81,
+        127
+      ],
+      "Oltre 65": [
+        24,
+        65
+      ]
+    },
+    "generazioni_2025": {
+      "Generazione silenziosa (1928-1945)": [
+        2,
+        7
+      ],
+      "Baby boomers (1946-1964)": [
+        57,
+        121
+      ],
+      "Generazione X (1965-1980)": [
+        148,
+        160
+      ],
+      "Millennials (1981-2000)": [
+        85,
+        59
+      ]
+    },
+    "eta_media": {
+      "2024": [
+        50.3,
+        55.5
+      ],
+      "2025": [
+        51.0,
+        55.7
+      ]
+    }
   },
-  "per_genere": {
-   "2021": [
-    292,
-    359
-   ],
-   "2022": [
-    296,
-    354
-   ],
-   "2023": [
-    301,
-    353
-   ],
-   "2024": [
-    299,
-    348
-   ],
-   "2025": [
-    292,
-    347
-   ]
+  "praticanti": {
+    "2020": 23,
+    "2021": [
+      13,
+      6
+    ],
+    "2022": [
+      15,
+      13
+    ],
+    "2023": [
+      14,
+      15
+    ],
+    "2024": [
+      15,
+      10
+    ],
+    "2025": [
+      20,
+      13
+    ]
   },
-  "per_genere_2021_2022": true,
-  "sezioni_2025": {
-   "Albo sez. A": [
-    283,
-    342
-   ],
-   "Albo sez. B": [
-    1,
-    2
-   ],
-   "Elenco speciale": [
-    8,
-    3
-   ]
+  "flussi_stima_2025": {
+    "uscite": [
+      9,
+      8
+    ],
+    "ingressi": [
+      2,
+      7
+    ]
   },
-  "sezioni_2024": {
-   "Albo sez. A": [
-    287,
-    343
-   ],
-   "Albo sez. B": [
-    1,
-    2
-   ],
-   "Elenco speciale": [
-    11,
-    3
-   ]
+  "flussi_ufficiali": [
+    [
+      "2021",
+      "6 / 7",
+      "6 / 6",
+      "su richiesta 11, trasferimento 1"
+    ],
+    [
+      "2022",
+      "6 / 2",
+      "2 / 7",
+      "su richiesta 7, decesso 1, trasferimento 1"
+    ],
+    [
+      "2023",
+      "9 / 5",
+      "4 / 6",
+      "decesso 1, trasferimento 1, non indicato 8"
+    ],
+    [
+      "2024",
+      "6 / 1",
+      "8 / 6",
+      "su richiesta 12, decesso 1, trasferimento 1"
+    ],
+    [
+      "2025",
+      "2 / 8",
+      "9 / 9",
+      "su richiesta 12, decesso 3, trasferimento 3"
+    ],
+    [
+      "Totale",
+      "29 / 23",
+      "29 / 34",
+      ""
+    ]
+  ],
+  "consiglio": {
+    "2022-2025": [
+      4,
+      7
+    ],
+    "2026-2030": [
+      5,
+      6
+    ],
+    "cariche_2022": "Presidente uomo, Vicepresidente uomo, Segretaria donna, Tesoriera donna",
+    "cariche_2026_2030": "Presidente donna, Vicepresidente uomo, Segretaria donna, Tesoriera donna"
   },
-  "classi_eta_2025": {
-   "Fino a 35": [
-    28,
-    25
-   ],
-   "36-45": [
-    60,
-    38
-   ],
-   "46-55": [
-    99,
-    92
-   ],
-   "56-65": [
-    81,
-    127
-   ],
-   "Oltre 65": [
-    24,
-    65
-   ]
+  "organi": [
+    [
+      "Consiglio di disciplina 2022-2026 (Presidente donna)",
+      5,
+      6
+    ],
+    [
+      "Consiglio di disciplina 2026-2030 (Presidente e Segretaria donne)",
+      6,
+      5
+    ],
+    [
+      "Collegio dei revisori 2022-2026 (Presidente donna)",
+      3,
+      0
+    ],
+    [
+      "Collegio dei revisori 2026-2030 (Presidente donna)",
+      2,
+      1
+    ],
+    [
+      "Commissioni 2022-2026: 3 commissioni, componenti",
+      12,
+      15
+    ],
+    [
+      "Commissioni 2026-2030: 4 commissioni, componenti",
+      19,
+      21
+    ],
+    [
+      "Presidenze delle commissioni 2022-2026",
+      2,
+      1
+    ],
+    [
+      "Presidenze delle commissioni 2026-2030",
+      1,
+      3
+    ]
+  ],
+  "cpo": {
+    "nomina": "23 febbraio 2026",
+    "componenti": [
+      6,
+      1
+    ],
+    "nomi": [
+      [
+        "Emanuela Lupi",
+        "Presidente"
+      ],
+      [
+        "Monica Orecchioni",
+        "Vicepresidente"
+      ],
+      [
+        "Debora Bonavita",
+        "Segretaria"
+      ],
+      [
+        "Roberta Fabbri",
+        "Componente"
+      ],
+      [
+        "Lucia Camporesi",
+        "Componente"
+      ],
+      [
+        "Francesco Samorì",
+        "Componente"
+      ],
+      [
+        "Gianluca Zavagli",
+        "Componente"
+      ]
+    ],
+    "budget": 1500,
+    "personale": null
   },
-  "generazioni_2025": {
-   "Generazione silenziosa (1928-1945)": [
-    2,
-    7
-   ],
-   "Baby boomers (1946-1964)": [
-    57,
-    121
-   ],
-   "Generazione X (1965-1980)": [
-    148,
-    160
-   ],
-   "Millennials (1981-2000)": [
-    85,
-    59
-   ]
+  "cassa_cnpadc": {
+    "iscritti_attivi": {
+      "Forlì": [
+        486,
+        45.3
+      ],
+      "Emilia-Romagna": [
+        6098,
+        40.8
+      ],
+      "Italia": [
+        73959,
+        33.4
+      ]
+    },
+    "reddito_medio": {
+      "Forlì": [
+        59218,
+        129687
+      ],
+      "Emilia-Romagna": [
+        69199,
+        133509
+      ],
+      "Italia": [
+        61184,
+        115046
+      ]
+    },
+    "divario_reddito": {
+      "Forlì": [
+        49.2,
+        54.3
+      ],
+      "Emilia-Romagna": [
+        47.8,
+        48.2
+      ],
+      "Italia": [
+        46.2,
+        46.8
+      ]
+    },
+    "divario_volume_affari": {
+      "Forlì": 57.0,
+      "Emilia-Romagna": 52.2,
+      "Italia": 50.9
+    },
+    "rapporto_eta": {
+      "Fino a 30": [
+        133,
+        93,
+        90
+      ],
+      "31-40": [
+        73,
+        66,
+        69
+      ],
+      "41-50": [
+        63,
+        55,
+        57
+      ],
+      "51-65": [
+        46,
+        52,
+        52
+      ],
+      "Oltre 65": [
+        49,
+        61,
+        87
+      ]
+    }
   },
-  "eta_media": {
-   "2024": [
-    50.3,
-    55.5
-   ],
-   "2025": [
-    51.0,
-    55.7
-   ]
-  }
- },
- "praticanti": {
-  "2020": 23,
-  "2021": [
-   13,
-   6
+  "cassa_cnpr": [
+    [
+      "Iscritti attivi",
+      39,
+      60,
+      "–"
+    ],
+    [
+      "Reddito medio (Irpef)",
+      "58.806 €",
+      "71.637 €",
+      "17,9%"
+    ],
+    [
+      "Volume d’affari medio (IVA)",
+      "114.738 €",
+      "143.551 €",
+      "20,1%"
+    ],
+    [
+      "Divario di reddito 51-65 anni (27 donne, 41 uomini)",
+      "62.522 €",
+      "82.524 €",
+      "24,2%"
+    ]
   ],
-  "2022": [
-   15,
-   13
+  "formazione_eventi": [
+    [
+      "2025",
+      51,
+      74,
+      193,
+      "27,7%",
+      "12 (di cui 3 con almeno 3 relatori)"
+    ]
   ],
-  "2023": [
-   14,
-   15
+  "esoneri": [
+    [
+      "Maternità",
+      1,
+      0
+    ],
+    [
+      "Paternità",
+      0,
+      1
+    ],
+    [
+      "Cura di familiari",
+      0,
+      0
+    ]
   ],
-  "2024": [
-   15,
-   10
+  "tribunale": null,
+  "occ": [
+    [
+      "Gestori in elenco al 31/12/2021",
+      33,
+      28,
+      "54,1%"
+    ],
+    [
+      "Gestori in elenco al 31/12/2022",
+      34,
+      29,
+      "54,0%"
+    ],
+    [
+      "Gestori in elenco al 31/12/2023",
+      35,
+      30,
+      "53,8%"
+    ],
+    [
+      "Gestori in elenco al 31/12/2024",
+      35,
+      30,
+      "53,8%"
+    ],
+    [
+      "Gestori in elenco al 31/12/2025",
+      35,
+      30,
+      "53,8%"
+    ],
+    [
+      "Incarichi assegnati nel 2021",
+      70,
+      23,
+      "75,3%"
+    ],
+    [
+      "Incarichi assegnati nel 2022",
+      53,
+      88,
+      "37,6%"
+    ],
+    [
+      "Incarichi assegnati nel 2023",
+      83,
+      24,
+      "77,6%"
+    ],
+    [
+      "Incarichi assegnati nel 2024",
+      61,
+      54,
+      "53,0%"
+    ],
+    [
+      "Incarichi assegnati nel 2025",
+      53,
+      34,
+      "60,9%"
+    ],
+    [
+      "Incarichi 2021-2025, totale",
+      320,
+      223,
+      "58,9%"
+    ]
   ],
-  "2025": [
-   20,
-   13
-  ]
- },
- "flussi_stima_2025": {
-  "uscite": [
-   9,
-   8
+  "cciaa": [
+    [
+      "Presidente del collegio sindacale",
+      73,
+      294,
+      "19,9%",
+      "17,1%"
+    ],
+    [
+      "Sindaco effettivo",
+      257,
+      636,
+      "28,8%",
+      "26,7%"
+    ],
+    [
+      "Sindaco supplente",
+      263,
+      473,
+      "35,7%",
+      "35,4%"
+    ],
+    [
+      "Revisore legale",
+      155,
+      384,
+      "28,8%",
+      "29,7%"
+    ],
+    [
+      "Revisore unico",
+      62,
+      166,
+      "27,2%",
+      "20,3%"
+    ]
   ],
-  "ingressi": [
-   2,
-   7
-  ]
- },
- "flussi_ufficiali": [
-  [
-   "2021",
-   "6 / 7",
-   "6 / 6",
-   "su richiesta 11, trasferimento 1"
-  ],
-  [
-   "2022",
-   "6 / 2",
-   "2 / 7",
-   "su richiesta 7, decesso 1, trasferimento 1"
-  ],
-  [
-   "2023",
-   "9 / 5",
-   "4 / 6",
-   "decesso 1, trasferimento 1, non indicato 8"
-  ],
-  [
-   "2024",
-   "6 / 1",
-   "8 / 6",
-   "su richiesta 12, decesso 1, trasferimento 1"
-  ],
-  [
-   "2025",
-   "2 / 8",
-   "9 / 9",
-   "su richiesta 12, decesso 3, trasferimento 3"
-  ],
-  [
-   "Totale",
-   "29 / 23",
-   "29 / 34",
-   ""
-  ]
- ],
- "consiglio": {
-  "2022-2025": [
-   4,
-   7
-  ],
-  "2026-2030": [
-   5,
-   6
-  ],
-  "cariche_2022": "Presidente uomo, Vicepresidente uomo, Segretaria donna, Tesoriera donna",
-  "cariche_2026_2030": "Presidente donna, Vicepresidente uomo, Segretaria donna, Tesoriera donna"
- },
- "organi": [
-  [
-   "Consiglio di disciplina 2022-2026 (Presidente donna)",
-   5,
-   6
-  ],
-  [
-   "Consiglio di disciplina 2026-2030 (Presidente e Segretaria donne)",
-   6,
-   5
-  ],
-  [
-   "Collegio dei revisori 2022-2026 (Presidente donna)",
-   3,
-   0
-  ],
-  [
-   "Collegio dei revisori 2026-2030 (Presidente donna)",
-   2,
-   1
-  ],
-  [
-   "Commissioni 2022-2026: 3 commissioni, componenti",
-   12,
-   15
-  ],
-  [
-   "Commissioni 2026-2030: 4 commissioni, componenti",
-   19,
-   21
-  ],
-  [
-   "Presidenze delle commissioni 2022-2026",
-   2,
-   1
-  ],
-  [
-   "Presidenze delle commissioni 2026-2030",
-   1,
-   3
-  ]
- ],
- "cpo": {
-  "nomina": "23 febbraio 2026",
-  "componenti": [
-   6,
-   1
-  ],
-  "nomi": [
-   [
-    "Emanuela Lupi",
-    "Presidente"
-   ],
-   [
-    "Monica Orecchioni",
-    "Vicepresidente"
-   ],
-   [
-    "Debora Bonavita",
-    "Segretaria"
-   ],
-   [
-    "Roberta Fabbri",
-    "Componente"
-   ],
-   [
-    "Lucia Camporesi",
-    "Componente"
-   ],
-   [
-    "Francesco Samorì",
-    "Componente"
-   ],
-   [
-    "Gianluca Zavagli",
-    "Componente"
-   ]
-  ],
-  "budget": null,
-  "personale": null
- },
- "cassa_cnpadc": {
-  "iscritti_attivi": {
-   "Forlì": [
-    486,
-    45.3
-   ],
-   "Emilia-Romagna": [
-    6098,
-    40.8
-   ],
-   "Italia": [
-    73959,
-    33.4
-   ]
+  "spese": null,
+  "questionario": null,
+  "attivita_2025": null,
+  "spese_note": "Fondazione: nel 2025 l’unica spesa per attività socio-sportive è l’iscrizione di 18 partecipanti alla Diabetes Marathon (180 euro, 8 aprile 2025), su 29.615 euro di costi della produzione della Fondazione. Non ci sono stati altri eventi culturali o sportivi. Il genere dei partecipanti non è noto.",
+  "ricevuti": {},
+  "flussi_u50": {
+    "2021": [
+      0,
+      0
+    ],
+    "2022": [
+      1,
+      0
+    ],
+    "2023": [
+      1,
+      2
+    ],
+    "2024": [
+      2,
+      0
+    ],
+    "2025": [
+      4,
+      1
+    ],
+    "totale": [
+      8,
+      3
+    ]
   },
-  "reddito_medio": {
-   "Forlì": [
-    59218,
-    129687
-   ],
-   "Emilia-Romagna": [
-    69199,
-    133509
-   ],
-   "Italia": [
-    61184,
-    115046
-   ]
+  "eventi_kpi": {
+    "pct_relatrici": "27,7%",
+    "solo_uomini": "12 su 51"
   },
-  "divario_reddito": {
-   "Forlì": [
-    49.2,
-    54.3
-   ],
-   "Emilia-Romagna": [
-    47.8,
-    48.2
-   ],
-   "Italia": [
-    46.2,
-    46.8
-   ]
-  },
-  "divario_volume_affari": {
-   "Forlì": 57.0,
-   "Emilia-Romagna": 52.2,
-   "Italia": 50.9
-  },
-  "rapporto_eta": {
-   "Fino a 30": [
-    133,
-    93,
-    90
-   ],
-   "31-40": [
-    73,
-    66,
-    69
-   ],
-   "41-50": [
-    63,
-    55,
-    57
-   ],
-   "51-65": [
-    46,
-    52,
-    52
-   ],
-   "Oltre 65": [
-    49,
-    61,
-    87
-   ]
-  }
- },
- "cassa_cnpr": [
-  [
-   "Iscritti attivi",
-   39,
-   60,
-   "–"
+  "tribunale_nota": "Il 12 ottobre 2026 abbiamo chiesto al Tribunale di Forlì gli incarichi 2021-2025 conferiti a commercialisti, per genere e tipo (procedure concorsuali, esecuzioni, volontaria giurisdizione). Il Tribunale non ha concesso i dati. La rilevazione resta tra gli obiettivi dei prossimi bilanci, anche con altre fonti. Alla fine di questo capitolo riportiamo un indicatore indiretto ricavato dal Registro delle imprese.",
+  "cnpr_testo": "Tra i ragionieri commercialisti iscritti alla Cassa Ragionieri il divario è molto più basso che tra i dottori commercialisti: 17,9% a Forlì, contro il 26,6% dell’Emilia-Romagna e il 29,2% dell’Italia. Sono però 99 persone, quasi tutte sopra i 50 anni: tra i 51 e i 65 anni il divario sale al 24,2%, oltre i 65 anni è quasi nullo. Le classi sotto i 50 anni hanno meno di 5 iscritti e non vengono pubblicate.",
+  "occ_testo": "Tra i gestori della crisi iscritti all’Ordine le donne sono la maggioranza (35 su 65 nel 2025, il 54%) e ricevono più incarichi: 320 su 543 in cinque anni, il 59%. In media 9 incarichi per gestrice contro 7-8 per gestore. Il 2022 va in senso opposto (88 incarichi a uomini su 141): il dato andrà verificato con l’OCC.",
+  "cciaa_testo": [
+    "Negli organi di controllo delle imprese della provincia le donne sono meno di una su tre, mentre tra gli iscritti all’Ordine sono il 46%. Più si sale, meno donne si trovano: sono il 36% dei sindaci supplenti, il 29% dei sindaci effettivi e solo il 20% dei presidenti di collegio sindacale. In cinque anni la quota è cresciuta poco (presidenti dal 17,1% al 19,9%).",
+    "Il dato per età mostra che la differenza è soprattutto generazionale: tra i presidenti di collegio con 30-49 anni donne e uomini sono alla pari (15 e 15), tra 50 e 69 anni le donne sono 52 contro 227, oltre i 70 anni 6 contro 52."
   ],
-  [
-   "Reddito medio (Irpef)",
-   "58.806 €",
-   "71.637 €",
-   "17,9%"
+  "cciaa_procedure": [
+    [
+      "Curatore fallimentare",
+      125,
+      162,
+      "43,6%",
+      "43,6%"
+    ],
+    [
+      "Commissario giudiziale",
+      11,
+      39,
+      "22,0%",
+      "32,3%"
+    ],
+    [
+      "Liquidatore giudiziario",
+      17,
+      16,
+      "51,5%",
+      "47,7%"
+    ]
   ],
-  [
-   "Volume d’affari medio (IVA)",
-   "114.738 €",
-   "143.551 €",
-   "20,1%"
-  ],
-  [
-   "Divario di reddito 51-65 anni (27 donne, 41 uomini)",
-   "62.522 €",
-   "82.524 €",
-   "24,2%"
-  ]
- ],
- "formazione_eventi": [
-  [
-   "2025",
-   51,
-   74,
-   193,
-   "27,7%",
-   "12 (di cui 3 con almeno 3 relatori)"
-  ]
- ],
- "esoneri": [
-  [
-   "Maternità",
-   1,
-   0
-  ],
-  [
-   "Paternità",
-   0,
-   1
-  ],
-  [
-   "Cura di familiari",
-   0,
-   0
-  ]
- ],
- "tribunale": null,
- "occ": [
-  [
-   "Gestori in elenco al 31/12/2021",
-   33,
-   28,
-   "54,1%"
-  ],
-  [
-   "Gestori in elenco al 31/12/2022",
-   34,
-   29,
-   "54,0%"
-  ],
-  [
-   "Gestori in elenco al 31/12/2023",
-   35,
-   30,
-   "53,8%"
-  ],
-  [
-   "Gestori in elenco al 31/12/2024",
-   35,
-   30,
-   "53,8%"
-  ],
-  [
-   "Gestori in elenco al 31/12/2025",
-   35,
-   30,
-   "53,8%"
-  ],
-  [
-   "Incarichi assegnati nel 2021",
-   70,
-   23,
-   "75,3%"
-  ],
-  [
-   "Incarichi assegnati nel 2022",
-   53,
-   88,
-   "37,6%"
-  ],
-  [
-   "Incarichi assegnati nel 2023",
-   83,
-   24,
-   "77,6%"
-  ],
-  [
-   "Incarichi assegnati nel 2024",
-   61,
-   54,
-   "53,0%"
-  ],
-  [
-   "Incarichi assegnati nel 2025",
-   53,
-   34,
-   "60,9%"
-  ],
-  [
-   "Incarichi 2021-2025, totale",
-   320,
-   223,
-   "58,9%"
-  ]
- ],
- "cciaa": [
-  [
-   "Presidente del collegio sindacale",
-   73,
-   294,
-   "19,9%",
-   "17,1%"
-  ],
-  [
-   "Sindaco effettivo",
-   257,
-   636,
-   "28,8%",
-   "26,7%"
-  ],
-  [
-   "Sindaco supplente",
-   263,
-   473,
-   "35,7%",
-   "35,4%"
-  ],
-  [
-   "Revisore legale",
-   155,
-   384,
-   "28,8%",
-   "29,7%"
-  ],
-  [
-   "Revisore unico",
-   62,
-   166,
-   "27,2%",
-   "20,3%"
-  ]
- ],
- "spese": null,
- "questionario": null,
- "attivita_2025": null,
- "spese_note": "Fondazione: nel 2025 l’unica spesa per attività socio-sportive è l’iscrizione di 18 partecipanti alla Diabetes Marathon (180 euro, 8 aprile 2025), su 29.615 euro di costi della produzione della Fondazione. Non ci sono stati altri eventi culturali o sportivi. Il genere dei partecipanti non è noto.",
- "ricevuti": {},
- "flussi_u50": {
-  "2021": [
-   0,
-   0
-  ],
-  "2022": [
-   1,
-   0
-  ],
-  "2023": [
-   1,
-   2
-  ],
-  "2024": [
-   2,
-   0
-  ],
-  "2025": [
-   4,
-   1
-  ],
-  "totale": [
-   8,
-   3
-  ]
- },
- "eventi_kpi": {
-  "pct_relatrici": "27,7%",
-  "solo_uomini": "12 su 51"
- },
- "tribunale_nota": "Il 12 ottobre 2026 abbiamo chiesto al Tribunale di Forlì gli incarichi 2021-2025 conferiti a commercialisti, per genere e tipo (procedure concorsuali, esecuzioni, volontaria giurisdizione). Il Tribunale non ha concesso i dati. La rilevazione resta tra gli obiettivi dei prossimi bilanci, anche con altre fonti. Alla fine di questo capitolo riportiamo un indicatore indiretto ricavato dal Registro delle imprese.",
- "cnpr_testo": "Tra i ragionieri commercialisti iscritti alla Cassa Ragionieri il divario è molto più basso che tra i dottori commercialisti: 17,9% a Forlì, contro il 26,6% dell’Emilia-Romagna e il 29,2% dell’Italia. Sono però 99 persone, quasi tutte sopra i 50 anni: tra i 51 e i 65 anni il divario sale al 24,2%, oltre i 65 anni è quasi nullo. Le classi sotto i 50 anni hanno meno di 5 iscritti e non vengono pubblicate.",
- "occ_testo": "Tra i gestori della crisi iscritti all’Ordine le donne sono la maggioranza (35 su 65 nel 2025, il 54%) e ricevono più incarichi: 320 su 543 in cinque anni, il 59%. In media 9 incarichi per gestrice contro 7-8 per gestore. Il 2022 va in senso opposto (88 incarichi a uomini su 141): il dato andrà verificato con l’OCC.",
- "cciaa_testo": [
-  "Negli organi di controllo delle imprese della provincia le donne sono meno di una su tre, mentre tra gli iscritti all’Ordine sono il 46%. Più si sale, meno donne si trovano: sono il 36% dei sindaci supplenti, il 29% dei sindaci effettivi e solo il 20% dei presidenti di collegio sindacale. In cinque anni la quota è cresciuta poco (presidenti dal 17,1% al 19,9%).",
-  "Il dato per età mostra che la differenza è soprattutto generazionale: tra i presidenti di collegio con 30-49 anni donne e uomini sono alla pari (15 e 15), tra 50 e 69 anni le donne sono 52 contro 227, oltre i 70 anni 6 contro 52."
- ],
- "cciaa_procedure": [
-  [
-   "Curatore fallimentare",
-   125,
-   162,
-   "43,6%",
-   "43,6%"
-  ],
-  [
-   "Commissario giudiziale",
-   11,
-   39,
-   "22,0%",
-   "32,3%"
-  ],
-  [
-   "Liquidatore giudiziario",
-   17,
-   16,
-   "51,5%",
-   "47,7%"
-  ]
- ],
- "cciaa_proc_testo": "Non avendo i dati del Tribunale, il Registro delle imprese offre almeno un’indicazione: tra i curatori fallimentari registrati le donne sono stabilmente il 44%, tra i liquidatori giudiziari circa la metà, tra i commissari giudiziali solo il 22%, in calo dal 32% del 2021."
+  "cciaa_proc_testo": "Non avendo i dati del Tribunale, il Registro delle imprese offre almeno un’indicazione: tra i curatori fallimentari registrati le donne sono stabilmente il 44%, tra i liquidatori giudiziari circa la metà, tra i commissari giudiziali solo il 22%, in calo dal 32% del 2021."
 }

@@ -102,9 +102,9 @@ C.push(p('Il Comitato precedente (2022-2026) era presieduto da Monica Orecchioni
 C.push(h2('Cosa fa il Comitato'));
 C.push(p('Il CPO promuove la parità tra iscritte, iscritti e tirocinanti: analizza i dati, propone iniziative al Consiglio, organizza eventi formativi, vigila contro le discriminazioni e redige il bilancio di genere.'));
 C.push(h2('Risorse'));
-C.push(p(['Budget assegnato dal Consiglio per il 2026: ', D.cpo.budget != null ? run(`${it(D.cpo.budget)} €`) : daFare('da chiedere al Consiglio; se non assegnato, motivazione come chiedono le Linee guida')]));
+C.push(p(['Budget assegnato dal Consiglio per il 2026: ', D.cpo.budget != null ? run(`${it(D.cpo.budget)} € nel bilancio preventivo 2026, destinati alle attività formative del Comitato`) : daFare('da chiedere al Consiglio; se non assegnato, motivazione come chiedono le Linee guida')]));
 C.push(p(['Personale della Segreteria di supporto al CPO: ', D.cpo.personale || daFare('nominativo o ufficio di riferimento')]));
-C.push(p('Fino al 2025 il Comitato ha operato senza budget, a titolo gratuito o con sponsor.'));
+C.push(p('È la prima volta che il Comitato ha uno stanziamento proprio: fino al 2025 ha operato senza budget, a titolo gratuito o con sponsor.'));
 
 // ---------------- 4 attività
 C.push(h1('4. Le attività'));
@@ -260,7 +260,7 @@ C.push(table(['Obiettivo', 'Indicatore', 'Partenza 2025', 'Traguardo 2027'], [
   ['Più relatrici', '% relatrici negli eventi dell’Ordine', D.eventi_kpi.pct_relatrici, 'almeno 40%'],
   ['Nessun panel di soli uomini', 'Eventi con soli relatori uomini', D.eventi_kpi.solo_uomini, '0 tra gli eventi con 3 o più relatori'],
   ['Presidenze delle commissioni', 'Commissioni presiedute da donne', '1 su 4', 'almeno 2 su 4 al prossimo rinnovo'],
-  ['Il CPO ha risorse', 'Budget assegnato', 'nessuno', daFare('importo da concordare')],
+  ['Il CPO ha risorse', 'Budget assegnato', 'nessuno (1.500 € nel preventivo 2026)', 'stanziamento confermato nel preventivo 2027'],
   ['Ascoltare gli iscritti', 'Risposte al questionario', daFare('dato del questionario'), 'almeno 25% degli iscritti'],
   ['Divario di reddito', 'Divario Forlì rispetto alla media regionale', '+6,1 punti', 'sotto la media regionale entro il 2028'],
   ['Bilancio accessibile', 'Sintesi facile da leggere e PDF per sintesi vocale', 'sì (2025)', 'sì, anche versione audio'],
