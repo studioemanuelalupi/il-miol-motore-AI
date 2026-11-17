@@ -86,3 +86,4 @@ Aggiornata al 3/11/2026. Assemblea di presentazione: 26/11/2026, Cesena.
 - Letti Reggio Emilia 2025, Ancona 2025 (budget CPO 1.500 euro), Roma 2025 (personale, divario mediano, no women no panel), Matera 2025
 - Online ma non scaricabili da qui: Varese 31/12/2025, Pescara consuntivo 2025, Pisa 2023, Taranto 2024, Arezzo preventivo 2025
 - Inseriti in bozza: personale dell'Ordine (2 dipendenti donne, Valmori e Maraldi, confermato da Emanuela); "no women no panel" negli obiettivi; confronto budget con Ancona. Parti in giallo scese a 9
+- 17/11: questionario NON partito (Emanuela). In bozza presentato come azione 2026-2027 (cap. 11, attivita' 2026, obiettivi, appendice). Parti in giallo: 6

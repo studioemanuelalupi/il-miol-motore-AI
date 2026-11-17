@@ -45,7 +45,7 @@ C.push(p(run('Ordine dei Dottori Commercialisti e degli Esperti Contabili di For
 C.push(new Paragraph({ heading: HeadingLevel.TITLE, spacing: { before: 1800, after: 200 }, children: [new TextRun({ text: 'Bilancio di genere 2025', font: FONT, bold: true, size: 56, color: ACCENT })] }));
 C.push(p(run('A cura del Comitato Pari Opportunità', { size: 26 })));
 C.push(p(run('Assemblea degli iscritti – Cesena, 26 novembre 2026', { size: 22, color: GREY })));
-C.push(p([run('BOZZA DI LAVORO del 6 ottobre 2026. ', { bold: true }), run('Le parti evidenziate in giallo aspettano i dati richiesti all’Ordine il 28/9/2026 (scadenza 31 ottobre) o il questionario agli iscritti.')], { spacing: { before: 1200, after: 140, line: 360 } }));
+C.push(p([run('BOZZA DI LAVORO del 17 novembre 2026. ', { bold: true }), run('Le parti evidenziate in giallo sono ancora da completare dal CPO.')], { spacing: { before: 1200, after: 140, line: 360 } }));
 
 C.push(h2('Come leggere questo documento'));
 C.push(p('Abbiamo scritto il bilancio per essere letto da tutte e tutti, anche da chi ha un disturbo specifico dell’apprendimento (DSA): carattere senza grazie, frasi brevi, sfondo crema, ogni grafico accompagnato dalla tabella con i numeri. Usiamo il femminile e il maschile; quando per brevità c’è solo il maschile, si intende riferito a tutte le persone.'));
@@ -118,7 +118,7 @@ C.push(b('Nomina del Comitato (23 febbraio 2026) e avvio della collaborazione st
 C.push(b('Partecipazione al convegno “Zero disparità, più produttività – La certificazione della parità di genere” (Cesena, 4 giugno 2026), con Camera di Commercio della Romagna e Consigliera di Parità regionale.'));
 C.push(b('Check-up dei bilanci di genere 2023 e 2024 e confronto con 17 bilanci di altri Ordini.'));
 C.push(b('Richiesta dati all’Ordine e alla Fondazione (28 settembre 2026), call con la Presidente dell’Ordine (7 ottobre) e richieste a OCC Romagna (5 ottobre), Cassa Ragionieri, Tribunale e Camera di Commercio (12 ottobre).'));
-C.push(b([run('Questionario breve agli iscritti su conciliazione, carriera, DSA e inclusione. '), daFare('data di invio e numero di risposte')]));
+C.push(b('Preparato il questionario breve agli iscritti su conciliazione, carriera, DSA e inclusione: sarà inviato nel 2026-2027 (capitolo 11).'));
 C.push(b(daFare('altre attività 2026 fino all’assemblea')));
 
 // ---------------- 5 contesto iscritti
@@ -253,8 +253,14 @@ C.push(D.spese ? table(['Gruppo', 'Importo', '% sul totale'], D.spese, [4000, 25
 
 // ---------------- 11 questionario
 C.push(h1('11. La voce degli iscritti: il questionario'));
-C.push(p('Il questionario breve chiede di conciliazione tra lavoro e famiglia, di carriera, di esperienze di discriminazione e, per la prima volta tra i bilanci di genere degli Ordini che abbiamo esaminato, di DSA e inclusione. È anonimo e i risultati sono pubblicati solo in forma aggregata.'));
-C.push(D.questionario ? p(D.questionario) : p([daFare('numero di risposte per genere, principali risultati, grafici')]));
+C.push(p('Quest’anno il bilancio non contiene ancora la voce diretta degli iscritti: il CPO, insediato a febbraio 2026, ha scelto di dare priorità alla raccolta dei dati ufficiali. Il questionario è una delle azioni del prossimo anno.'));
+C.push(h2('Un’azione per il 2026-2027: il questionario agli iscritti'));
+C.push(p('Il CPO ha preparato un questionario breve, anonimo, da compilare in pochi minuti. Chiede di conciliazione tra lavoro e famiglia, di carriera e incarichi, di esperienze di discriminazione e, per la prima volta tra i bilanci di genere degli Ordini che abbiamo esaminato, di DSA e inclusione.'));
+C.push(b('Invio: tramite la Segreteria a tutte le iscritte, gli iscritti e i tirocinanti, con un promemoria dopo due settimane.'));
+C.push(b('Obiettivo di partecipazione: almeno un quarto degli iscritti (circa 160 risposte).'));
+C.push(b('Risultati: solo in forma aggregata, senza pubblicare gruppi con meno di 5 risposte, nel bilancio di genere 2026.'));
+C.push(b('Confronto: alcune domande riprendono quelle del questionario nazionale CNPO 2025, così da leggere Forlì accanto all’Italia.'));
+C.push(D.questionario ? p(D.questionario) : p('Fino ad allora, il riferimento è il questionario nazionale, riportato qui sotto.'));
 if (D.cnpo_2025) { const Q = D.cnpo_2025; C.push(h2('Il quadro nazionale: questionario CNPO 2025')); C.push(p(Q.intro)); C.push(table(['Risposta', 'Donne', 'Uomini'], Q.righe, [5800, 1600, 1626])); fonte('Comitato Nazionale Pari Opportunità e Fondazione Nazionale di Ricerca dei Commercialisti, “Conciliazione vita-lavoro e gender pay gap. Questionario CNPO 2025”, 25 novembre 2025. Percentuali calcolate sulle risposte di ciascun genere; le donne sono il 51,7% del campione, più del loro peso sull’Albo.'); Q.testo.forEach(t => C.push(p(t))); }
 
 // ---------------- 12 obiettivi
@@ -266,7 +272,7 @@ C.push(table(['Obiettivo', 'Indicatore', 'Partenza 2025', 'Traguardo 2027'], [
   ['Nessun panel di soli uomini (“no women no panel”)', 'Eventi con soli relatori uomini', D.eventi_kpi.solo_uomini, '0 tra gli eventi con 3 o più relatori: il CPO propone al Consiglio di adottarlo come regola per gli eventi dell’Ordine'],
   ['Presidenze delle commissioni', 'Commissioni presiedute da donne', '1 su 4', 'almeno 2 su 4 al prossimo rinnovo'],
   ['Il CPO ha risorse', 'Budget assegnato', 'nessuno (1.500 € nel preventivo 2026)', 'stanziamento confermato nel preventivo 2027'],
-  ['Ascoltare gli iscritti', 'Risposte al questionario', daFare('dato del questionario'), 'almeno 25% degli iscritti'],
+  ['Ascoltare gli iscritti', 'Risposte al questionario', 'non ancora rilevato (primo invio 2026-2027)', 'almeno 25% degli iscritti'],
   ['Divario di reddito', 'Divario Forlì rispetto alla media regionale', '+6,1 punti', 'sotto la media regionale entro il 2028'],
   ['Bilancio accessibile', 'Sintesi facile da leggere e PDF per sintesi vocale', 'sì (2025)', 'sì, anche versione audio'],
 ], [2300, 2700, 2000, 2026]));
@@ -293,7 +299,7 @@ C.push(table(['N.', 'Dato richiesto', 'A chi', 'Stato'], [
   ['9', 'Incarichi del Tribunale', 'Tribunale di Forlì', D.tribunale ? 'inserito' : D.tribunale_nota ? 'non concessi' : 'in attesa'],
   ['10', 'Gestori e incarichi', 'OCC Romagna', stato(D.occ)],
   ['11', 'Sindaci e revisori', 'Camera di Commercio', stato(D.cciaa)],
-  ['–', 'Questionario agli iscritti', 'CPO', stato(D.questionario)],
+  ['–', 'Questionario agli iscritti', 'CPO', 'azione 2026-2027'],
 ], [700, 4300, 2300, 1726]));
 
 const doc = new Document({
