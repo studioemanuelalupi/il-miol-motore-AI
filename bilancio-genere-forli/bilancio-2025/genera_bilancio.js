@@ -67,6 +67,7 @@ C.push(new TableOfContents('Sommario', { hyperlink: true, headingStyleRange: '1-
 C.push(p(run('Il sommario si aggiorna in Word con tasto destro → Aggiorna campo.', { size: 18, color: GREY })));
 
 // ---------------- 1 premessa e metodo
+if (D.confronto_italia) { C.push(h2('Forlì e l’Italia')); C.push(table(['Indicatore', 'Forlì', 'Italia'], D.confronto_italia, [3000, 2900, 3126])); fonte('Forlì: elaborazioni CPO su dati della Segreteria e della Cassa Dottori. Italia: Bilancio di genere 2024 del Comitato Nazionale Pari Opportunità (25 novembre 2025) e Cassa Dottori; Emilia-Romagna dallo stesso Bilancio nazionale.'); C.push(p(D.confronto_testo)); }
 C.push(h1('1. Premessa e metodo'));
 C.push(p('Il bilancio di genere fotografa la presenza di donne e uomini nella professione e nell’Ordine di Forlì e misura le differenze di reddito, di carriera e di rappresentanza. Serve a decidere dove intervenire e, l’anno dopo, a verificare se gli interventi hanno funzionato.'));
 C.push(p('Seguiamo le Linee guida del Comitato Pari Opportunità nazionale del 14 marzo 2024 (Informativa CNDCEC n. 31/2024) e il Regolamento dei CPO, che all’art. 3 lett. i) affida al Comitato la redazione del bilancio di genere dell’Ordine.'));
@@ -120,7 +121,7 @@ C.push(b(daFare('altre attività 2026 fino all’assemblea')));
 
 // ---------------- 5 contesto iscritti
 C.push(h1('5. Chi siamo: iscritte e iscritti'));
-C.push(p(`Al 31/12/2025 l’Ordine conta ${tot25} iscritti: ${f25} donne (${pct(f25, tot25)}) e ${m25} uomini. La quota di donne è stabile da tre anni ed è molto più alta della media nazionale (33,9%) e regionale (34,2%).`));
+C.push(p(`Al 31/12/2025 l’Ordine conta ${tot25} iscritti: ${f25} donne (${pct(f25, tot25)}) e ${m25} uomini. La quota di donne è stabile da tre anni ed è molto più alta della media nazionale (33,9%) e regionale (42%, dati 2024 del Bilancio di genere del Consiglio Nazionale).`));
 C.push(h2('Albo ed Elenco speciale per genere'));
 const sezRow = (k) => { const a = I.sezioni_2024[k], c = I.sezioni_2025[k]; return [k, `${a[0]} / ${a[1]}`, `${c[0]} / ${c[1]}`, pct(c[0], c[0] + c[1])]; };
 C.push(table(['Sezione', '2024 donne / uomini', '2025 donne / uomini', '% donne 2025'], [

@@ -76,3 +76,8 @@ Aggiornata al 3/11/2026. Assemblea di presentazione: 26/11/2026, Cesena.
 - Rapporto "Conciliazione vita-lavoro e gender pay gap - Questionario CNPO 2025" (25/11/2025), caricato da Emanuela; sul Drive in 09
 - 3.681 risposte, compilazione giugno-ottobre 2025. Inserita nel cap. 11 la sezione "Il quadro nazionale" con tabella donne/uomini e confronto con Forli' (donne 46% degli iscritti contro 33,9% Italia e 34,2% Emilia-Romagna al 31/12/2024)
 - Resta da sapere dalla Segreteria se l'informativa 88/2025 fu inviata agli iscritti di Forli'
+
+## 17/11: documenti nazionali caricati da Emanuela
+- Bilancio di genere CN 2024 (25/11/2025), Bilancio di genere CN 2023, Linee guida 2024 (Word e PDF, gia' nel fascicolo), Informativa 41/2016 (bilancio di genere CN 2016, solo storico), Questionario CNPO 2025 (doppione)
+- Inserito in bozza il riquadro "Forli' e l'Italia" (dopo la sintesi): iscritte, Consiglio, presidenza, commissioni, cancellazioni, divario, CPO, bilanci redatti
+- Corretto: donne iscritte in Emilia-Romagna 42% (Bilancio CN 2024), non 34,2% (dato della tabella di campionamento CNPO, incoerente)

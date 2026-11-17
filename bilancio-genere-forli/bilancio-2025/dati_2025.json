@@ -720,7 +720,50 @@
     "testo": [
       "Il quadro nazionale conferma quello che i dati di Forlì mostrano sui redditi: le donne si concentrano nelle fasce più basse e sono più spesso collaboratrici che titolari. Il questionario aggiunge il perché: tra chi dichiara effetti negativi della nascita di un figlio sulla professione, il 68,8% sono donne; tra chi assiste direttamente figli o familiari, il 60,7% sono donne, e la quota femminile sale al 67,1% tra chi dedica alla cura 5 ore al giorno o più.",
       "Due dati riguardano direttamente il lavoro dei CPO: il 63,4% giudica utile la formazione sulle pari opportunità organizzata dagli Ordini (solo il 14,9% no), e il 18,2% non riconosce come violenza economica comportamenti che spesso emergono negli studi, come il socio escluso dalle decisioni o il coniuge escluso dalla gestione del patrimonio comune.",
-      "Un confronto utile per Forlì: al 31 dicembre 2024 le donne erano il 33,9% degli iscritti all’Albo in Italia e il 34,2% in Emilia-Romagna, mentre nel nostro Ordine sono il 46%. La rappresentanza femminile nella base degli iscritti è quindi molto più alta della media: il divario che resta nei redditi e nelle cariche non si spiega con il numero di professioniste."
+      "Un confronto utile per Forlì: al 31 dicembre 2024 le donne erano il 33,9% degli iscritti all’Albo in Italia e il 42% in Emilia-Romagna, mentre nel nostro Ordine sono il 46%. La rappresentanza femminile nella base degli iscritti è quindi molto più alta della media: il divario che resta nei redditi e nelle cariche non si spiega con il numero di professioniste."
     ]
-  }
+  },
+  "confronto_italia": [
+    [
+      "Donne tra gli iscritti",
+      "45,7% (2025)",
+      "33,9% Italia, 42,0% Emilia-Romagna (2024)"
+    ],
+    [
+      "Donne nel Consiglio dell’Ordine",
+      "45,5% (2026-2030); 36,4% (2022-2025)",
+      "39% dei Consigli territoriali (2024)"
+    ],
+    [
+      "Presidenza dell’Ordine",
+      "donna dal 2026",
+      "14% di presidenti donne (19 su 132, 2024)"
+    ],
+    [
+      "Donne nelle commissioni",
+      "47,5% dei componenti (2026-2030)",
+      "26,9% negli organismi consultivi del CN"
+    ],
+    [
+      "Cancellazioni nell’anno, % degli iscritti",
+      "donne 2,7%, uomini 1,7% (2024)",
+      "donne 1,92%, uomini 1,23% (2024)"
+    ],
+    [
+      "Divario di reddito",
+      "54,3% (Cassa Dottori)",
+      "46,8% Cassa Dottori; 42,9% con le due Casse (CN)"
+    ],
+    [
+      "Presidenza del CPO",
+      "donna",
+      "78% dei CPO territoriali"
+    ],
+    [
+      "Bilancio di genere",
+      "redatto ogni anno dal 2023",
+      "58% dei CPO; tutti in Emilia-Romagna"
+    ]
+  ],
+  "confronto_testo": "Forlì ha più donne iscritte e più donne negli organi della media italiana, e dal 2026 una Presidente. I punti deboli sono gli stessi del quadro nazionale, ma più marcati: le donne si cancellano dall’Albo più degli uomini e il divario di reddito è più alto della media. Anche il Consiglio Nazionale segnala il fenomeno delle cancellazioni femminili e lo collega alla penalità di maternità."
 }
