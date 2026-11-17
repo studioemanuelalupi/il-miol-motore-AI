@@ -71,3 +71,8 @@ Aggiornata al 3/11/2026. Assemblea di presentazione: 26/11/2026, Cesena.
 - Aggiunta in bozza la tabella "Imprese attive al 31/12/2025": organi di controllo 30,1% donne (presidenti collegio 20,0%), vertici delle imprese 16-22%, tutte le cariche 24,6%
 - Per i ruoli nelle procedure resta il dato "registrate" del 20/10: nelle imprese attive i curatori sono pochissimi (24), perché le imprese in procedura non sono attive
 - Stesso giorno Emanuela ha ricaricato 8 file (Segreteria e Cassa Dottori): identici a quelli gia' nel fascicolo
+
+## 17/11: questionario CNPO 2025 (nazionale)
+- Rapporto "Conciliazione vita-lavoro e gender pay gap - Questionario CNPO 2025" (25/11/2025), caricato da Emanuela; sul Drive in 09
+- 3.681 risposte, compilazione giugno-ottobre 2025. Inserita nel cap. 11 la sezione "Il quadro nazionale" con tabella donne/uomini e confronto con Forli' (donne 46% degli iscritti contro 33,9% Italia e 34,2% Emilia-Romagna al 31/12/2024)
+- Resta da sapere dalla Segreteria se l'informativa 88/2025 fu inviata agli iscritti di Forli'

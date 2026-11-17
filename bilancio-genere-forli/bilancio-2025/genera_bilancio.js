@@ -252,6 +252,7 @@ C.push(D.spese ? table(['Gruppo', 'Importo', '% sul totale'], D.spese, [4000, 25
 C.push(h1('11. La voce degli iscritti: il questionario'));
 C.push(p('Il questionario breve chiede di conciliazione tra lavoro e famiglia, di carriera, di esperienze di discriminazione e, per la prima volta tra i bilanci di genere degli Ordini che abbiamo esaminato, di DSA e inclusione. È anonimo e i risultati sono pubblicati solo in forma aggregata.'));
 C.push(D.questionario ? p(D.questionario) : p([daFare('numero di risposte per genere, principali risultati, grafici')]));
+if (D.cnpo_2025) { const Q = D.cnpo_2025; C.push(h2('Il quadro nazionale: questionario CNPO 2025')); C.push(p(Q.intro)); C.push(table(['Risposta', 'Donne', 'Uomini'], Q.righe, [5800, 1600, 1626])); fonte('Comitato Nazionale Pari Opportunità e Fondazione Nazionale di Ricerca dei Commercialisti, “Conciliazione vita-lavoro e gender pay gap. Questionario CNPO 2025”, 25 novembre 2025. Percentuali calcolate sulle risposte di ciascun genere; le donne sono il 51,7% del campione, più del loro peso sull’Albo.'); Q.testo.forEach(t => C.push(p(t))); }
 
 // ---------------- 12 obiettivi
 C.push(h1('12. Obiettivi per il 2027'));

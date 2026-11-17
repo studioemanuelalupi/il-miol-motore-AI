@@ -662,5 +662,65 @@
       "24,6%"
     ]
   ],
-  "cciaa_attive_testo": "Il dato delle sole imprese attive a fine 2025 conferma il quadro: le donne hanno il 30% delle cariche negli organi di controllo, ma solo il 20% delle presidenze di collegio. Per confronto, nel governo delle imprese della provincia le donne sono il 21% degli amministratori unici e il 17% dei presidenti di consiglio di amministrazione: negli organi di controllo, dove lavorano i commercialisti, la presenza femminile è un po' più alta che nel resto dell'economia locale (25% di tutte le cariche)."
+  "cciaa_attive_testo": "Il dato delle sole imprese attive a fine 2025 conferma il quadro: le donne hanno il 30% delle cariche negli organi di controllo, ma solo il 20% delle presidenze di collegio. Per confronto, nel governo delle imprese della provincia le donne sono il 21% degli amministratori unici e il 17% dei presidenti di consiglio di amministrazione: negli organi di controllo, dove lavorano i commercialisti, la presenza femminile è un po' più alta che nel resto dell'economia locale (25% di tutte le cariche).",
+  "cnpo_2025": {
+    "intro": "Nel 2025 il Comitato Nazionale Pari Opportunità, con la Fondazione Nazionale di Ricerca dei Commercialisti, ha raccolto 3.681 risposte a un questionario anonimo (Informativa CN n. 88/2025, compilazione da giugno a ottobre 2025). I risultati, pubblicati il 25 novembre 2025, sono il riferimento con cui confronteremo il questionario del nostro Ordine.",
+    "righe": [
+      [
+        "Bilanciamento vita-lavoro giudicato non adeguato",
+        "59,4%",
+        "48,4%"
+      ],
+      [
+        "Lavora più di 8 ore al giorno",
+        "52,5%",
+        "58,5%"
+      ],
+      [
+        "Dopo la nascita di un figlio: carriera arrestata",
+        "15,1%",
+        "1,5%"
+      ],
+      [
+        "Dopo la nascita di un figlio: rinuncia a incarichi importanti",
+        "15,5%",
+        "3,9%"
+      ],
+      [
+        "Dopo la nascita di un figlio: reddito aumentato",
+        "5,4%",
+        "16,3%"
+      ],
+      [
+        "Reddito professionale fino a 60.000 euro",
+        "66,5%",
+        "47,4%"
+      ],
+      [
+        "Titolare di studio",
+        "51,3%",
+        "61,1%"
+      ],
+      [
+        "Collaboratore in altro studio",
+        "25,3%",
+        "11,6%"
+      ],
+      [
+        "Esegue lavoro extra senza chiedere compenso",
+        "64,5%",
+        "57,4%"
+      ],
+      [
+        "Fa fatica a rifiutare lavoro pagato male",
+        "22,3%",
+        "13,6%"
+      ]
+    ],
+    "testo": [
+      "Il quadro nazionale conferma quello che i dati di Forlì mostrano sui redditi: le donne si concentrano nelle fasce più basse e sono più spesso collaboratrici che titolari. Il questionario aggiunge il perché: tra chi dichiara effetti negativi della nascita di un figlio sulla professione, il 68,8% sono donne; tra chi assiste direttamente figli o familiari, il 60,7% sono donne, e la quota femminile sale al 67,1% tra chi dedica alla cura 5 ore al giorno o più.",
+      "Due dati riguardano direttamente il lavoro dei CPO: il 63,4% giudica utile la formazione sulle pari opportunità organizzata dagli Ordini (solo il 14,9% no), e il 18,2% non riconosce come violenza economica comportamenti che spesso emergono negli studi, come il socio escluso dalle decisioni o il coniuge escluso dalla gestione del patrimonio comune.",
+      "Un confronto utile per Forlì: al 31 dicembre 2024 le donne erano il 33,9% degli iscritti all’Albo in Italia e il 34,2% in Emilia-Romagna, mentre nel nostro Ordine sono il 46%. La rappresentanza femminile nella base degli iscritti è quindi molto più alta della media: il divario che resta nei redditi e nelle cariche non si spiega con il numero di professioniste."
+    ]
+  }
 }
