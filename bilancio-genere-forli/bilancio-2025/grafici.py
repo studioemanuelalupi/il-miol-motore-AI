@@ -42,4 +42,34 @@ barre_gruppi(list(ce), [[v[0] for v in ce.values()], [v[1] for v in ce.values()]
 C = D['cassa_cnpadc']['divario_reddito']
 barre_gruppi(list(C), [[v[0] for v in C.values()], [v[1] for v in C.values()]], ['Redditi 2023', 'Redditi 2024'], [PREV, CUR],
              'Divario di reddito donne-uomini (%)', 'divario.png', fmt='{:.1f}%')
+
+def barre_orizz(etichette, valori, riferimento, nota_rif, titolo, file):
+    fig, ax = plt.subplots(figsize=(8, 0.5 * len(etichette) + 1.4), dpi=200); fig.patch.set_facecolor(SURF)
+    ax.set_facecolor(SURF)
+    for sp in ('top', 'right', 'bottom'): ax.spines[sp].set_visible(False)
+    ax.spines['left'].set_color(GRID); ax.xaxis.grid(True, color=GRID, linewidth=0.8); ax.set_axisbelow(True); ax.tick_params(length=0)
+    y = list(range(len(etichette)))[::-1]
+    ax.barh(y, valori, 0.62, color=F, edgecolor=SURF, linewidth=1)
+    for yy, v in zip(y, valori):
+        ax.text(v + 1, yy, f'{v:.1f}%'.replace('.', ','), va='center', fontsize=9, color=INK)
+    ax.axvline(riferimento, color=MUTED, linewidth=1.2, linestyle=(0, (4, 3)))
+    ax.text(riferimento + 0.8, len(etichette) - 0.35, nota_rif, fontsize=8.5, color=MUTED, va='bottom')
+    ax.set_yticks(y); ax.set_yticklabels(etichette); ax.set_xlim(0, 100); ax.set_xlabel('% donne')
+    fig.suptitle(titolo, x=0.02, ha='left', fontsize=13, fontweight='bold', color=INK)
+    fig.tight_layout(rect=(0, 0, 1, 0.97)); fig.savefig(os.path.join(OUT, file), facecolor=SURF); plt.close(fig)
+
+quota = 100 * 292 / 639
+org = [('Consiglio 2022-2026', 4, 7), ('Consiglio 2026-2030', *D['consiglio']['2026-2030']), ('CPO 2026-2030', *D['cpo']['componenti'])]
+org += [(o[0].split(' (')[0].split(':')[0].replace(', componenti', ''), o[1], o[2]) for o in D['organi']]
+barre_orizz([o[0] for o in org], [100 * o[1] / (o[1] + o[2]) for o in org], quota, 'donne tra gli iscritti 45,7%',
+            'Donne negli organi dell’Ordine', 'organi.png')
+ca = [r for r in D['cciaa_attive']]
+barre_orizz([r[0] for r in ca], [100 * r[1] / (r[1] + r[2]) for r in ca], quota, 'donne tra gli iscritti 45,7%',
+            'Donne nelle cariche delle imprese attive della provincia, fine 2025', 'cciaa.png')
+inc = [r for r in D['occ'] if r[0].startswith('Incarichi assegnati nel')]
+barre_gruppi([r[0][-4:] for r in inc], [[r[1] for r in inc], [r[2] for r in inc]], ['Gestrici', 'Gestori'], [F, M],
+             'Incarichi OCC ai gestori iscritti a Forlì', 'occ.png')
+pr = D['praticanti']; anni = ['2021', '2022', '2023', '2024', '2025']
+barre_gruppi(anni, [[pr[a][0] for a in anni], [pr[a][1] for a in anni]], ['Donne', 'Uomini'], [F, M],
+             'Praticanti per genere', 'praticanti.png')
 print('grafici ok')
