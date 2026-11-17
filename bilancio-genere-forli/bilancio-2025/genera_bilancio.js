@@ -121,7 +121,7 @@ C.push(b('Richiesta dati all’Ordine e alla Fondazione (28 settembre 2026), cal
 C.push(b('Preparato il questionario breve agli iscritti su conciliazione, carriera, DSA e inclusione: sarà inviato nel 2026-2027 (capitolo 11).'));
 C.push(b('Primo stanziamento proprio del CPO: 1.500 euro nel bilancio di previsione 2026, destinati alle attività formative (capitolo 3).'));
 C.push(b('Convegno “Comunicazione e leadership di genere: differenze tra universo maschile e femminile” (Cesenatico, Museo della Marineria, 19 giugno 2026, ore 15-18), relatrice Roberta Fabbri: organizzato insieme all’Ordine dei Consulenti del Lavoro di Forlì-Cesena (delibera del 27 marzo 2026) e alla Fondazione, accreditato dal Consiglio Nazionale anche per la deontologia, 100 posti (66 per commercialisti di Forlì e Ravenna, 34 per consulenti del lavoro), con il contributo di uno sponsor privato di 500 euro.'));
-C.push(b('Rete regionale: rubrica dei Presidenti dei CPO dell’Emilia-Romagna e coinvolgimento dei Consiglieri delegati (marzo 2026); assemblea dei Presidenti a Bologna (23 settembre 2026) che ha eletto la rappresentante regionale nel Comitato Nazionale; riunioni del coordinamento regionale del 16 e 24 novembre 2026.'));
+C.push(b('Rete regionale: rubrica dei Presidenti dei CPO dell’Emilia-Romagna e coinvolgimento dei Consiglieri delegati (marzo 2026); assemblea dei Presidenti a Bologna (23 settembre 2026) che ha eletto la rappresentante regionale nel Comitato Nazionale; riunione del coordinamento regionale del 24 novembre 2026.'));
 C.push(b('Programma del mandato, dai verbali del Comitato: un punto d’ascolto per iscritte e iscritti, progetti di educazione fiscale nelle scuole, un desk per i tirocinanti, formazione sulle pari opportunità e la rete con gli altri Ordini della provincia e con il CPO di Ravenna.'));
 
 // ---------------- 5 contesto iscritti
@@ -285,8 +285,10 @@ C.push(p('Il divario di reddito dipende da molti fattori fuori dal controllo del
 // ---------------- 13 conclusioni
 C.push(h1('13. Conclusioni'));
 C.push(p('Forlì è un Ordine con molte donne, più giovani dei colleghi, e con un’ampia base di praticanti. La parità nei numeri è vicina. Non lo è nei redditi: il divario è alto e cresce, soprattutto a metà carriera. Non lo è ancora nella rappresentanza, anche se il nuovo Consiglio è guidato da una Presidente.'));
-C.push(p('Con questo bilancio abbiamo voluto fare due passi in più: misurare dove si decidono le carriere (incarichi, cariche, formazione) e leggere con la lente di genere anche le spese dell’Ordine. Il prossimo anno sapremo se gli obiettivi fissati sono stati raggiunti.'));
-C.push(p(daFare('data e firme dei componenti del CPO')));
+C.push(p('Con questo bilancio abbiamo voluto fare due passi in più: misurare dove si decidono le carriere (incarichi, cariche, formazione) e iniziare a leggere con la lente di genere le spese, partendo dalla Fondazione. Il prossimo anno sapremo se gli obiettivi fissati sono stati raggiunti.'));
+C.push(p('Forlì, ____________________ 2026', { spacing: { before: 400, after: 300 } }));
+C.push(p(run('Il Comitato Pari Opportunità', { bold: true })));
+D.cpo.nomi.forEach(([n, r]) => C.push(p(`${n} – ${r}    ________________________________`, { spacing: { after: 260 } })));
 
 // ---------------- appendice
 C.push(h1('Appendice – Stato dei dati'));
