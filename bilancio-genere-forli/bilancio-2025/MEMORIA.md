@@ -65,3 +65,9 @@ Aggiornata al 3/11/2026. Assemblea di presentazione: 26/11/2026, Cesena.
 - Rete regionale CPO ER: rubrica dei Presidenti (marzo), richiesta dei delegati di Consiglio (23/3)
 - Nella cartella NON ci sono: consuntivo della Tesoriera, budget CPO, attivita' 2025 del CPO precedente, risultati del questionario, recepimento direttiva UE 2023/970
 - Il modulo OCC "Monitoraggio statistico 2025" e' un modello vuoto per i gestori: non serve al bilancio
+
+## 17/11: nuovi dati Camera di Commercio
+- Ricevuti da Emanuela: Persone e Cariche, imprese attive, 4° trimestre 2025, provincia FC (Infocamere StockView). Caricati sul Drive in 05
+- Aggiunta in bozza la tabella "Imprese attive al 31/12/2025": organi di controllo 30,1% donne (presidenti collegio 20,0%), vertici delle imprese 16-22%, tutte le cariche 24,6%
+- Per i ruoli nelle procedure resta il dato "registrate" del 20/10: nelle imprese attive i curatori sono pochissimi (24), perché le imprese in procedura non sono attive
+- Stesso giorno Emanuela ha ricaricato 8 file (Segreteria e Cassa Dottori): identici a quelli gia' nel fascicolo
