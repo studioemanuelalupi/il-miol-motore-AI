@@ -105,7 +105,9 @@ C.push(p('Il CPO promuove la parità tra iscritte, iscritti e tirocinanti: anali
 C.push(h2('Risorse'));
 C.push(p(['Budget assegnato dal Consiglio per il 2026: ', D.cpo.budget != null ? run(`${it(D.cpo.budget)} € nel bilancio preventivo 2026, destinati alle attività formative del Comitato`) : daFare('da chiedere al Consiglio; se non assegnato, motivazione come chiedono le Linee guida')]));
 C.push(p(['Personale della Segreteria di supporto al CPO: ', D.cpo.personale || daFare('nominativo o ufficio di riferimento')]));
-C.push(p('È la prima volta che il Comitato ha uno stanziamento proprio: fino al 2025 ha operato senza budget, a titolo gratuito o con sponsor.'));
+C.push(p('È la prima volta che il Comitato ha uno stanziamento proprio: fino al 2025 ha operato senza budget, a titolo gratuito o con sponsor. È in linea con altri Ordini: anche Ancona, nel bilancio di genere 2025, indica 1.500 euro per il funzionamento del proprio CPO.'));
+C.push(h2('Il personale dell’Ordine'));
+C.push(p('L’Ordine ha 2 dipendenti, entrambe donne, che lavorano nell’Ufficio Segreteria e seguono anche le attività del CPO. Il dato è riportato per completezza, come fanno gli Ordini più grandi (Roma rendiconta il personale per genere, età e contratto); con due persone non si calcolano indicatori.'));
 
 // ---------------- 4 attività
 C.push(h1('4. Le attività'));
@@ -261,7 +263,7 @@ C.push(p('Nessuno dei bilanci che abbiamo esaminato fissa obiettivi numerici da 
 C.push(table(['Obiettivo', 'Indicatore', 'Partenza 2025', 'Traguardo 2027'], [
   ['Bilancio completo', 'Contenuti minimi delle Linee guida coperti', 'circa 50% nel 2024', '100%'],
   ['Più relatrici', '% relatrici negli eventi dell’Ordine', D.eventi_kpi.pct_relatrici, 'almeno 40%'],
-  ['Nessun panel di soli uomini', 'Eventi con soli relatori uomini', D.eventi_kpi.solo_uomini, '0 tra gli eventi con 3 o più relatori'],
+  ['Nessun panel di soli uomini (“no women no panel”)', 'Eventi con soli relatori uomini', D.eventi_kpi.solo_uomini, '0 tra gli eventi con 3 o più relatori: il CPO propone al Consiglio di adottarlo come regola per gli eventi dell’Ordine'],
   ['Presidenze delle commissioni', 'Commissioni presiedute da donne', '1 su 4', 'almeno 2 su 4 al prossimo rinnovo'],
   ['Il CPO ha risorse', 'Budget assegnato', 'nessuno (1.500 € nel preventivo 2026)', 'stanziamento confermato nel preventivo 2027'],
   ['Ascoltare gli iscritti', 'Risposte al questionario', daFare('dato del questionario'), 'almeno 25% degli iscritti'],

@@ -81,3 +81,8 @@ Aggiornata al 3/11/2026. Assemblea di presentazione: 26/11/2026, Cesena.
 - Bilancio di genere CN 2024 (25/11/2025), Bilancio di genere CN 2023, Linee guida 2024 (Word e PDF, gia' nel fascicolo), Informativa 41/2016 (bilancio di genere CN 2016, solo storico), Questionario CNPO 2025 (doppione)
 - Inserito in bozza il riquadro "Forli' e l'Italia" (dopo la sintesi): iscritte, Consiglio, presidenza, commissioni, cancellazioni, divario, CPO, bilanci redatti
 - Corretto: donne iscritte in Emilia-Romagna 42% (Bilancio CN 2024), non 34,2% (dato della tabella di campionamento CNPO, incoerente)
+
+## 17/11: confronto con i bilanci 2025 di altri Ordini (Drive, cartella PARITA DI GENERE)
+- Letti Reggio Emilia 2025, Ancona 2025 (budget CPO 1.500 euro), Roma 2025 (personale, divario mediano, no women no panel), Matera 2025
+- Online ma non scaricabili da qui: Varese 31/12/2025, Pescara consuntivo 2025, Pisa 2023, Taranto 2024, Arezzo preventivo 2025
+- Inseriti in bozza: personale dell'Ordine (2 dipendenti donne, Valmori e Maraldi, confermato da Emanuela); "no women no panel" negli obiettivi; confronto budget con Ancona. Parti in giallo scese a 9
